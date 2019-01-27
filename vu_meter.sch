@@ -1,37 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:switches
-LIBS:stahllabs
+EESchema Schematic File Version 4
 LIBS:pocket_mixer-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -46,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L LM3914 U13
+L pocket_mixer-rescue:LM3914 U13
 U 1 1 5966459C
 P 5650 3950
 F 0 "U13" H 5350 4650 60  0000 C CNN
@@ -57,7 +26,7 @@ F 3 "" H 5850 3950 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR0112
+L pocket_mixer-rescue:+12V #PWR0112
 U 1 1 59664BB1
 P 5650 3150
 F 0 "#PWR0112" H 5650 3000 50  0001 C CNN
@@ -68,7 +37,7 @@ F 3 "" H 5650 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR0113
+L pocket_mixer-rescue:+12V #PWR0113
 U 1 1 59664FF6
 P 4800 4100
 F 0 "#PWR0113" H 4800 3950 50  0001 C CNN
@@ -79,7 +48,7 @@ F 3 "" H 4800 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D5
+L pocket_mixer-rescue:LED D5
 U 1 1 59665099
 P 6700 2550
 F 0 "D5" H 6700 2650 50  0000 C CNN
@@ -90,7 +59,7 @@ F 3 "" H 6700 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D6
+L pocket_mixer-rescue:LED D6
 U 1 1 596650CE
 P 6700 2850
 F 0 "D6" H 6700 2950 50  0000 C CNN
@@ -101,7 +70,7 @@ F 3 "" H 6700 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D7
+L pocket_mixer-rescue:LED D7
 U 1 1 596650F9
 P 6700 3150
 F 0 "D7" H 6700 3250 50  0000 C CNN
@@ -112,7 +81,7 @@ F 3 "" H 6700 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D8
+L pocket_mixer-rescue:LED D8
 U 1 1 59665121
 P 6700 3450
 F 0 "D8" H 6700 3550 50  0000 C CNN
@@ -123,7 +92,7 @@ F 3 "" H 6700 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D9
+L pocket_mixer-rescue:LED D9
 U 1 1 5966514C
 P 6700 3750
 F 0 "D9" H 6700 3850 50  0000 C CNN
@@ -134,7 +103,7 @@ F 3 "" H 6700 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D10
+L pocket_mixer-rescue:LED D10
 U 1 1 5966517E
 P 6700 4050
 F 0 "D10" H 6700 4150 50  0000 C CNN
@@ -145,7 +114,7 @@ F 3 "" H 6700 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D11
+L pocket_mixer-rescue:LED D11
 U 1 1 596651AF
 P 6700 4350
 F 0 "D11" H 6700 4450 50  0000 C CNN
@@ -156,7 +125,7 @@ F 3 "" H 6700 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D12
+L pocket_mixer-rescue:LED D12
 U 1 1 596651DF
 P 6700 4650
 F 0 "D12" H 6700 4750 50  0000 C CNN
@@ -167,7 +136,7 @@ F 3 "" H 6700 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D13
+L pocket_mixer-rescue:LED D13
 U 1 1 5966521F
 P 6700 4950
 F 0 "D13" H 6700 5050 50  0000 C CNN
@@ -178,7 +147,7 @@ F 3 "" H 6700 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D14
+L pocket_mixer-rescue:LED D14
 U 1 1 59665255
 P 6700 5250
 F 0 "D14" H 6700 5350 50  0000 C CNN
@@ -259,7 +228,7 @@ Connection ~ 6850 3450
 Connection ~ 6850 3150
 Connection ~ 6850 2850
 $Comp
-L +12V #PWR0114
+L pocket_mixer-rescue:+12V #PWR0114
 U 1 1 59665859
 P 6850 2350
 F 0 "#PWR0114" H 6850 2200 50  0001 C CNN

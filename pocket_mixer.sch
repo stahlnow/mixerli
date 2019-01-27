@@ -1,37 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:switches
-LIBS:stahllabs
+EESchema Schematic File Version 4
 LIBS:pocket_mixer-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -46,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L C C8
+L pocket_mixer-rescue:C C8
 U 1 1 591A2C85
 P 4700 3150
 F 0 "C8" V 4850 3100 50  0000 L CNN
@@ -57,7 +26,7 @@ F 3 "" H 4700 3150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R10
+L pocket_mixer-rescue:R R10
 U 1 1 591A2D97
 P 4700 2850
 F 0 "R10" V 4600 2850 50  0000 C CNN
@@ -68,7 +37,7 @@ F 3 "" H 4700 2850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR01
+L pocket_mixer-rescue:GND #PWR01
 U 1 1 591A367E
 P 4300 4000
 F 0 "#PWR01" H 4300 3750 50  0001 C CNN
@@ -81,7 +50,7 @@ $EndComp
 Text Notes 4050 800  0    60   ~ 0
 SUMMING AMPLIFIER
 $Comp
-L C C7
+L pocket_mixer-rescue:C C7
 U 1 1 591AB84F
 P 4700 2250
 F 0 "C7" V 4550 2200 50  0000 L CNN
@@ -92,7 +61,7 @@ F 3 "" H 4700 2250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R9
+L pocket_mixer-rescue:R R9
 U 1 1 591AB9DA
 P 4700 2600
 F 0 "R9" V 4600 2600 50  0000 C CNN
@@ -103,7 +72,7 @@ F 3 "" H 4700 2600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR02
+L pocket_mixer-rescue:GND #PWR02
 U 1 1 591AC612
 P 4300 1450
 F 0 "#PWR02" H 4300 1200 50  0001 C CNN
@@ -114,7 +83,7 @@ F 3 "" H 4300 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR03
+L pocket_mixer-rescue:GND #PWR03
 U 1 1 591AD0D4
 P 5150 1250
 F 0 "#PWR03" H 5150 1000 50  0001 C CNN
@@ -125,7 +94,7 @@ F 3 "" H 5150 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR04
+L pocket_mixer-rescue:GND #PWR04
 U 1 1 591AD0DA
 P 5450 1250
 F 0 "#PWR04" H 5450 1000 50  0001 C CNN
@@ -136,7 +105,7 @@ F 3 "" H 5450 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C11
+L pocket_mixer-rescue:C C11
 U 1 1 591AD0E0
 P 5150 1100
 F 0 "C11" H 5175 1200 50  0000 L CNN
@@ -147,7 +116,7 @@ F 3 "" H 5150 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C12
+L pocket_mixer-rescue:C C12
 U 1 1 591AD0E6
 P 5450 1100
 F 0 "C12" H 5475 1200 50  0000 L CNN
@@ -166,14 +135,14 @@ Wire Wire Line
 Wire Wire Line
 	4550 3150 4400 3150
 Wire Wire Line
-	4400 2850 4400 3750
+	4400 2850 4400 3150
 Wire Wire Line
 	4400 2850 4550 2850
 Connection ~ 4400 3150
 Wire Wire Line
 	4850 3150 5000 3150
 Wire Wire Line
-	5000 2850 5000 3850
+	5000 2850 5000 3150
 Wire Wire Line
 	4850 2850 5000 2850
 Connection ~ 5000 3150
@@ -186,13 +155,13 @@ Wire Notes Line
 Wire Notes Line
 	5700 650  3950 650 
 Wire Wire Line
-	4400 1650 4400 2600
+	4400 1650 4400 2250
 Wire Wire Line
 	4400 2250 4550 2250
 Wire Wire Line
 	4850 2250 5000 2250
 Wire Wire Line
-	5000 1550 5000 2600
+	5000 1550 5000 2250
 Wire Wire Line
 	5000 2600 4850 2600
 Connection ~ 5000 2250
@@ -294,7 +263,7 @@ Wire Wire Line
 Wire Wire Line
 	5000 3850 5400 3850
 $Comp
-L POT_Dual RV1
+L pocket_mixer-rescue:POT_Dual RV1
 U 1 1 59265CFA
 P 6350 2850
 F 0 "RV1" V 6400 2900 50  0000 C CNN
@@ -305,7 +274,7 @@ F 3 "" H 6600 2775 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C13
+L pocket_mixer-rescue:C C13
 U 1 1 5926902F
 P 7400 1150
 F 0 "C13" H 7425 1250 50  0000 L CNN
@@ -316,7 +285,7 @@ F 3 "" H 7400 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C14
+L pocket_mixer-rescue:C C14
 U 1 1 59269163
 P 7650 1150
 F 0 "C14" H 7675 1250 50  0000 L CNN
@@ -327,7 +296,7 @@ F 3 "" H 7650 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR05
+L pocket_mixer-rescue:GND #PWR05
 U 1 1 592695E8
 P 7400 1300
 F 0 "#PWR05" H 7400 1050 50  0001 C CNN
@@ -338,7 +307,7 @@ F 3 "" H 7400 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR06
+L pocket_mixer-rescue:GND #PWR06
 U 1 1 592696CE
 P 7650 1300
 F 0 "#PWR06" H 7650 1050 50  0001 C CNN
@@ -365,7 +334,7 @@ LiPo powered 10 channel (4x2 + 1x2) stereo mixer featuring\nstereo input level c
 Text Notes 2050 850  2    139  Italic 28
 pocket mixer
 $Comp
-L 4558 U1
+L pocket_mixer-rescue:4558 U1
 U 1 1 592A4153
 P 2250 5500
 F 0 "U1" H 2250 5700 50  0000 L CNN
@@ -377,7 +346,7 @@ F 4 "NJM4580E-TE1" H 2250 5500 60  0001 C CNN "MFN"
 	1    0    0    1   
 $EndComp
 $Comp
-L C C1
+L pocket_mixer-rescue:C C1
 U 1 1 592A4F3F
 P 2250 4800
 F 0 "C1" V 2400 4750 50  0000 L CNN
@@ -388,7 +357,7 @@ F 3 "" H 2250 4800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R1
+L pocket_mixer-rescue:R R1
 U 1 1 592A5F27
 P 2250 4500
 F 0 "R1" V 2150 4500 50  0000 C CNN
@@ -399,15 +368,15 @@ F 3 "" H 2250 4500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1150 5400 1950 5400
+	1150 5400 1850 5400
 Wire Wire Line
-	1850 4500 1850 5400
+	1850 4500 1850 4800
 Wire Wire Line
 	1850 4800 2100 4800
 Wire Wire Line
-	2550 5500 2950 5500
+	2550 5500 2650 5500
 Wire Wire Line
-	2650 4500 2650 5500
+	2650 4500 2650 4800
 Wire Wire Line
 	2650 4800 2400 4800
 Wire Wire Line
@@ -417,7 +386,7 @@ Wire Wire Line
 	2400 4500 2650 4500
 Connection ~ 2650 4800
 $Comp
-L GND #PWR07
+L pocket_mixer-rescue:GND #PWR07
 U 1 1 592A8F40
 P 1850 5600
 F 0 "#PWR07" H 1850 5350 50  0001 C CNN
@@ -431,7 +400,7 @@ Wire Wire Line
 	1950 5600 1850 5600
 Connection ~ 1850 5400
 $Comp
-L R R3
+L pocket_mixer-rescue:R R3
 U 1 1 592ABE39
 P 3100 5500
 F 0 "R3" V 3000 5500 50  0000 C CNN
@@ -443,7 +412,7 @@ F 3 "" H 3100 5500 50  0001 C CNN
 $EndComp
 Connection ~ 2650 5500
 $Comp
-L 4558 U1
+L pocket_mixer-rescue:4558 U1
 U 2 1 592AC0A7
 P 2250 7150
 F 0 "U1" H 2250 7350 50  0000 L CNN
@@ -455,7 +424,7 @@ F 4 "NJM4580E-TE1" H 2250 7150 60  0001 C CNN "MFN"
 	1    0    0    1   
 $EndComp
 $Comp
-L GND #PWR08
+L pocket_mixer-rescue:GND #PWR08
 U 1 1 592ACECD
 P 1850 7250
 F 0 "#PWR08" H 1850 7000 50  0001 C CNN
@@ -468,9 +437,9 @@ $EndComp
 Wire Wire Line
 	1950 7250 1850 7250
 Wire Wire Line
-	1050 7050 1950 7050
+	1050 7050 1850 7050
 $Comp
-L C C2
+L pocket_mixer-rescue:C C2
 U 1 1 592ADFB7
 P 2250 6450
 F 0 "C2" V 2400 6400 50  0000 L CNN
@@ -481,7 +450,7 @@ F 3 "" H 2250 6450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R2
+L pocket_mixer-rescue:R R2
 U 1 1 592AE99A
 P 2250 6200
 F 0 "R2" V 2150 6200 50  0000 C CNN
@@ -492,7 +461,7 @@ F 3 "" H 2250 6200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1850 6200 1850 7050
+	1850 6200 1850 6450
 Wire Wire Line
 	1850 6450 2100 6450
 Connection ~ 1850 7050
@@ -502,14 +471,14 @@ Connection ~ 1850 6450
 Wire Wire Line
 	2400 6200 2650 6200
 Wire Wire Line
-	2650 6200 2650 7150
+	2650 6200 2650 6450
 Wire Wire Line
-	2550 7150 2950 7150
+	2550 7150 2650 7150
 Wire Wire Line
 	2400 6450 2650 6450
 Connection ~ 2650 6450
 $Comp
-L R R4
+L pocket_mixer-rescue:R R4
 U 1 1 592AF37E
 P 3100 7150
 F 0 "R4" V 3000 7150 50  0000 C CNN
@@ -521,7 +490,7 @@ F 3 "" H 3100 7150 50  0001 C CNN
 $EndComp
 Connection ~ 2650 7150
 $Comp
-L GND #PWR09
+L pocket_mixer-rescue:GND #PWR09
 U 1 1 592B03C3
 P 2900 5000
 F 0 "#PWR09" H 2900 4750 50  0001 C CNN
@@ -532,7 +501,7 @@ F 3 "" H 2900 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR010
+L pocket_mixer-rescue:GND #PWR010
 U 1 1 592B03C9
 P 3200 5000
 F 0 "#PWR010" H 3200 4750 50  0001 C CNN
@@ -543,7 +512,7 @@ F 3 "" H 3200 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C3
+L pocket_mixer-rescue:C C3
 U 1 1 592B03CF
 P 2900 4850
 F 0 "C3" H 2925 4950 50  0000 L CNN
@@ -554,7 +523,7 @@ F 3 "" H 2900 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C4
+L pocket_mixer-rescue:C C4
 U 1 1 592B03D5
 P 3200 4850
 F 0 "C4" H 3225 4950 50  0000 L CNN
@@ -581,7 +550,7 @@ Wire Wire Line
 Wire Wire Line
 	1050 4200 1050 7050
 $Comp
-L 4558 U2
+L pocket_mixer-rescue:4558 U2
 U 1 1 592B1EBE
 P 3800 5600
 F 0 "U2" H 3800 5800 50  0000 L CNN
@@ -593,9 +562,9 @@ F 4 "NJM4580E-TE1" H 3800 5600 60  0001 C CNN "MFN"
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	3250 5500 3500 5500
+	3250 5500 3450 5500
 $Comp
-L GND #PWR011
+L pocket_mixer-rescue:GND #PWR011
 U 1 1 592B25B0
 P 3400 5700
 F 0 "#PWR011" H 3400 5450 50  0001 C CNN
@@ -608,7 +577,7 @@ $EndComp
 Wire Wire Line
 	3400 5700 3500 5700
 $Comp
-L C C5
+L pocket_mixer-rescue:C C5
 U 1 1 592B27BB
 P 3800 4900
 F 0 "C5" V 3950 4850 50  0000 L CNN
@@ -619,7 +588,7 @@ F 3 "" H 3800 4900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R5
+L pocket_mixer-rescue:R R5
 U 1 1 592B2903
 P 3800 4600
 F 0 "R5" V 3700 4600 50  0000 C CNN
@@ -630,7 +599,7 @@ F 3 "" H 3800 4600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3450 4600 3450 5500
+	3450 4600 3450 4900
 Wire Wire Line
 	3450 4900 3650 4900
 Connection ~ 3450 5500
@@ -640,12 +609,12 @@ Connection ~ 3450 4900
 Wire Wire Line
 	3950 4900 4150 4900
 Wire Wire Line
-	4150 4600 4150 5600
+	4150 4600 4150 4900
 Wire Wire Line
 	3950 4600 4150 4600
 Connection ~ 4150 4900
 $Comp
-L 4558 U2
+L pocket_mixer-rescue:4558 U2
 U 2 1 592B32D2
 P 3800 7250
 F 0 "U2" H 3800 7450 50  0000 L CNN
@@ -657,9 +626,9 @@ F 4 "NJM4580E-TE1" H 3800 7250 60  0001 C CNN "MFN"
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	3250 7150 3500 7150
+	3250 7150 3450 7150
 $Comp
-L GND #PWR012
+L pocket_mixer-rescue:GND #PWR012
 U 1 1 592B3684
 P 3400 7350
 F 0 "#PWR012" H 3400 7100 50  0001 C CNN
@@ -672,7 +641,7 @@ $EndComp
 Wire Wire Line
 	3500 7350 3400 7350
 $Comp
-L C C6
+L pocket_mixer-rescue:C C6
 U 1 1 592B637C
 P 3800 6550
 F 0 "C6" V 3950 6500 50  0000 L CNN
@@ -683,7 +652,7 @@ F 3 "" H 3800 6550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R6
+L pocket_mixer-rescue:R R6
 U 1 1 592B6512
 P 3800 6300
 F 0 "R6" V 3700 6300 50  0000 C CNN
@@ -694,14 +663,14 @@ F 3 "" H 3800 6300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3450 6300 3450 7150
+	3450 6300 3450 6550
 Wire Wire Line
 	3450 6550 3650 6550
 Connection ~ 3450 7150
 Wire Wire Line
 	3950 6550 4150 6550
 Wire Wire Line
-	4150 6300 4150 7250
+	4150 6300 4150 6550
 Wire Wire Line
 	3450 6300 3650 6300
 Connection ~ 3450 6550
@@ -710,9 +679,9 @@ Wire Wire Line
 Connection ~ 4150 6550
 Connection ~ 4150 5600
 Wire Wire Line
-	4100 5600 4300 5600
+	4100 5600 4150 5600
 $Comp
-L R R11
+L pocket_mixer-rescue:R R11
 U 1 1 592BF5DF
 P 5200 5800
 F 0 "R11" H 5050 5750 50  0000 C CNN
@@ -723,7 +692,7 @@ F 3 "" H 5200 5800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R12
+L pocket_mixer-rescue:R R12
 U 1 1 592BF741
 P 5200 7450
 F 0 "R12" H 5050 7400 50  0000 C CNN
@@ -734,15 +703,15 @@ F 3 "" H 5200 7450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5000 5600 5600 5600
+	5000 5600 5200 5600
 Wire Wire Line
 	5200 5600 5200 5650
 Wire Wire Line
 	5200 7300 5200 7250
 Wire Wire Line
-	5000 7250 5600 7250
+	5000 7250 5200 7250
 $Comp
-L GND #PWR013
+L pocket_mixer-rescue:GND #PWR013
 U 1 1 592C08DF
 P 5200 5950
 F 0 "#PWR013" H 5200 5700 50  0001 C CNN
@@ -753,7 +722,7 @@ F 3 "" H 5200 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR014
+L pocket_mixer-rescue:GND #PWR014
 U 1 1 592C0D70
 P 5200 7600
 F 0 "#PWR014" H 5200 7350 50  0001 C CNN
@@ -764,7 +733,7 @@ F 3 "" H 5200 7600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R7
+L pocket_mixer-rescue:R R7
 U 1 1 592C1AA7
 P 4450 5600
 F 0 "R7" V 4350 5600 50  0000 C CNN
@@ -783,7 +752,7 @@ Wire Wire Line
 Wire Wire Line
 	5600 7250 5600 6450
 $Comp
-L GND #PWR015
+L pocket_mixer-rescue:GND #PWR015
 U 1 1 592C5107
 P 5500 6250
 F 0 "#PWR015" H 5500 6000 50  0001 C CNN
@@ -799,7 +768,7 @@ Wire Wire Line
 	5600 6300 5600 5600
 Connection ~ 4150 7250
 $Comp
-L PJ3410 J2
+L pocket_mixer-rescue:PJ3410 J2
 U 1 1 592F947C
 P 8850 2850
 F 0 "J2" H 8650 3070 60  0000 C CNN
@@ -810,7 +779,7 @@ F 3 "https://www.thonk.co.uk/shop/pj3410/" H 8650 2550 21  0001 C BIN
 	-1   0    0    1   
 $EndComp
 $Comp
-L PJ3410 J1
+L pocket_mixer-rescue:PJ3410 J1
 U 1 1 592FA1EF
 P 5700 6350
 F 0 "J1" H 5500 6570 60  0000 C CNN
@@ -821,7 +790,7 @@ F 3 "https://www.thonk.co.uk/shop/pj3410/" H 5500 6050 21  0001 C BIN
 	-1   0    0    1   
 $EndComp
 $Comp
-L 4558 U3
+L pocket_mixer-rescue:4558 U3
 U 2 1 5930C6F3
 P 4700 3850
 F 0 "U3" H 4700 4050 50  0000 L CNN
@@ -833,7 +802,7 @@ F 4 "NJM4580E-TE1" H 4700 3850 60  0001 C CNN "MFN"
 	1    0    0    1   
 $EndComp
 $Comp
-L 4558 U3
+L pocket_mixer-rescue:4558 U3
 U 1 1 5930DA18
 P 4700 1550
 F 0 "U3" H 4700 1750 50  0000 L CNN
@@ -845,7 +814,7 @@ F 4 "NJM4580E-TE1" H 4700 1550 60  0001 C CNN "MFN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4558 U4
+L pocket_mixer-rescue:4558 U4
 U 1 1 5930EE84
 P 7050 1850
 F 0 "U4" H 7050 2050 50  0000 L CNN
@@ -857,7 +826,7 @@ F 4 "NJM4580E-TE1" H 7050 1850 60  0001 C CNN "MFN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4558 U4
+L pocket_mixer-rescue:4558 U4
 U 2 1 593111C9
 P 7050 3200
 F 0 "U4" H 7050 3400 50  0000 L CNN
@@ -875,7 +844,7 @@ Wire Wire Line
 Wire Wire Line
 	6050 2450 6250 2450
 $Comp
-L GND #PWR016
+L pocket_mixer-rescue:GND #PWR016
 U 1 1 593215E1
 P 6050 2450
 F 0 "#PWR016" H 6050 2200 50  0001 C CNN
@@ -888,7 +857,7 @@ $EndComp
 Wire Wire Line
 	6500 1750 6750 1750
 $Comp
-L R R13
+L pocket_mixer-rescue:R R13
 U 1 1 5932383D
 P 7650 2450
 F 0 "R13" V 7550 2450 50  0000 C CNN
@@ -899,7 +868,7 @@ F 3 "" H 7650 2450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L CP C15
+L pocket_mixer-rescue:CP C15
 U 1 1 593244E7
 P 8100 2450
 F 0 "C15" H 8125 2550 50  0000 L CNN
@@ -910,7 +879,7 @@ F 3 "" H 8100 2450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R15
+L pocket_mixer-rescue:R R15
 U 1 1 59324F52
 P 8450 2650
 F 0 "R15" V 8350 2650 50  0000 C CNN
@@ -921,7 +890,7 @@ F 3 "" H 8450 2650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR017
+L pocket_mixer-rescue:GND #PWR017
 U 1 1 593251CF
 P 8450 2800
 F 0 "#PWR017" H 8450 2550 50  0001 C CNN
@@ -936,7 +905,7 @@ OUTPUT LEVEL
 Wire Wire Line
 	7950 2450 7800 2450
 Wire Wire Line
-	8250 2450 8800 2450
+	8250 2450 8450 2450
 Wire Wire Line
 	8800 2450 8800 2800
 Wire Wire Line
@@ -946,7 +915,7 @@ LEFT
 Wire Wire Line
 	6050 2950 6250 2950
 $Comp
-L GND #PWR018
+L pocket_mixer-rescue:GND #PWR018
 U 1 1 59273A6C
 P 6050 2950
 F 0 "#PWR018" H 6050 2700 50  0001 C CNN
@@ -965,9 +934,9 @@ Wire Wire Line
 Wire Wire Line
 	6750 3300 6750 3800
 Wire Wire Line
-	7350 3200 7500 3200
+	7350 3200 7400 3200
 $Comp
-L R R14
+L pocket_mixer-rescue:R R14
 U 1 1 59275911
 P 7650 3200
 F 0 "R14" V 7550 3200 50  0000 C CNN
@@ -978,7 +947,7 @@ F 3 "" H 7650 3200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L CP C16
+L pocket_mixer-rescue:CP C16
 U 1 1 59275A4E
 P 8100 3200
 F 0 "C16" H 8125 3300 50  0000 L CNN
@@ -989,7 +958,7 @@ F 3 "" H 8100 3200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R16
+L pocket_mixer-rescue:R R16
 U 1 1 59275B8A
 P 8450 3350
 F 0 "R16" V 8350 3350 50  0000 C CNN
@@ -1002,9 +971,9 @@ $EndComp
 Wire Wire Line
 	7800 3200 7950 3200
 Wire Wire Line
-	8250 3200 8800 3200
+	8250 3200 8450 3200
 $Comp
-L GND #PWR019
+L pocket_mixer-rescue:GND #PWR019
 U 1 1 592765A9
 P 8450 3500
 F 0 "#PWR019" H 8450 3250 50  0001 C CNN
@@ -1028,7 +997,7 @@ RIGHT
 Wire Wire Line
 	6750 1950 6750 2450
 Wire Wire Line
-	6750 2450 7500 2450
+	6750 2450 7400 2450
 Wire Wire Line
 	6750 3800 7400 3800
 Wire Wire Line
@@ -1040,7 +1009,7 @@ Wire Wire Line
 	7400 1850 7350 1850
 Connection ~ 7400 2450
 $Comp
-L CP C9
+L pocket_mixer-rescue:CP C9
 U 1 1 592B11A8
 P 4850 5600
 F 0 "C9" H 4875 5700 50  0000 L CNN
@@ -1053,7 +1022,7 @@ $EndComp
 Wire Wire Line
 	4600 5600 4700 5600
 $Comp
-L CP C10
+L pocket_mixer-rescue:CP C10
 U 1 1 592B28B1
 P 4850 7250
 F 0 "C10" H 4875 7350 50  0000 L CNN
@@ -1064,7 +1033,7 @@ F 3 "" H 4850 7250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R8
+L pocket_mixer-rescue:R R8
 U 1 1 592B2A83
 P 4450 7250
 F 0 "R8" V 4350 7250 50  0000 C CNN
@@ -1077,11 +1046,11 @@ $EndComp
 Wire Wire Line
 	4600 7250 4700 7250
 Wire Wire Line
-	4100 7250 4300 7250
+	4100 7250 4150 7250
 Wire Wire Line
 	5500 6250 5700 6250
 $Comp
-L GND #PWR020
+L pocket_mixer-rescue:GND #PWR020
 U 1 1 592BE335
 P 8700 2800
 F 0 "#PWR020" H 8700 2550 50  0001 C CNN
@@ -1095,14 +1064,6 @@ Wire Wire Line
 	8700 2800 8700 2750
 Wire Wire Line
 	8700 2750 8850 2750
-Wire Wire Line
-	4600 1250 4600 1250
-Wire Wire Line
-	4600 3550 4600 3550
-Wire Wire Line
-	2150 5800 2150 5800
-Wire Wire Line
-	3700 5300 3700 5300
 Wire Wire Line
 	8450 2500 8450 2450
 Connection ~ 8450 2450
@@ -1123,7 +1084,7 @@ Wire Notes Line
 Text Notes 900  5000 1    60   ~ 0
 LOOP SEND
 $Comp
-L C C47
+L pocket_mixer-rescue:C C47
 U 1 1 5937DC5A
 P 4400 4950
 F 0 "C47" H 4425 5050 50  0000 L CNN
@@ -1134,7 +1095,7 @@ F 3 "" H 4400 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C48
+L pocket_mixer-rescue:C C48
 U 1 1 5937DF16
 P 4650 4950
 F 0 "C48" H 4675 5050 50  0000 L CNN
@@ -1145,7 +1106,7 @@ F 3 "" H 4650 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR021
+L pocket_mixer-rescue:GND #PWR021
 U 1 1 5937E2B5
 P 4400 5100
 F 0 "#PWR021" H 4400 4850 50  0001 C CNN
@@ -1156,7 +1117,7 @@ F 3 "" H 4400 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR022
+L pocket_mixer-rescue:GND #PWR022
 U 1 1 5937E3D7
 P 4650 5100
 F 0 "#PWR022" H 4650 4850 50  0001 C CNN
@@ -1185,7 +1146,7 @@ Wire Notes Line
 Text Notes 7050 4650 0    60   ~ 0
 POWER SUPPLY
 $Comp
-L -12V #PWR47
+L pocket_mixer-rescue:-12V #PWR47
 U 1 1 594108A2
 P 8550 5150
 F 0 "#PWR47" H 8550 5250 50  0001 C CNN
@@ -1200,7 +1161,7 @@ Wire Wire Line
 Wire Wire Line
 	8550 5100 8550 5150
 $Comp
-L +12V #PWR023
+L pocket_mixer-rescue:+12V #PWR023
 U 1 1 59410CDC
 P 8550 4900
 F 0 "#PWR023" H 8550 4750 50  0001 C CNN
@@ -1215,7 +1176,7 @@ Wire Wire Line
 Wire Wire Line
 	8550 4950 8550 4900
 $Comp
-L -12V #PWR39
+L pocket_mixer-rescue:-12V #PWR39
 U 1 1 59418EBF
 P 6950 3500
 F 0 "#PWR39" H 6950 3600 50  0001 C CNN
@@ -1226,7 +1187,7 @@ F 3 "" H 6950 3500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L +12V #PWR024
+L pocket_mixer-rescue:+12V #PWR024
 U 1 1 5941949A
 P 6950 2900
 F 0 "#PWR024" H 6950 2750 50  0001 C CNN
@@ -1237,7 +1198,7 @@ F 3 "" H 6950 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR025
+L pocket_mixer-rescue:+12V #PWR025
 U 1 1 59419AF0
 P 6950 1550
 F 0 "#PWR025" H 6950 1400 50  0001 C CNN
@@ -1248,7 +1209,7 @@ F 3 "" H 6950 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L -12V #PWR37
+L pocket_mixer-rescue:-12V #PWR37
 U 1 1 59419C78
 P 6950 2150
 F 0 "#PWR37" H 6950 2250 50  0001 C CNN
@@ -1259,7 +1220,7 @@ F 3 "" H 6950 2150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L +12V #PWR026
+L pocket_mixer-rescue:+12V #PWR026
 U 1 1 5941A251
 P 4600 1250
 F 0 "#PWR026" H 4600 1100 50  0001 C CNN
@@ -1270,7 +1231,7 @@ F 3 "" H 4600 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L -12V #PWR22
+L pocket_mixer-rescue:-12V #PWR22
 U 1 1 5941A3D9
 P 4600 1850
 F 0 "#PWR22" H 4600 1950 50  0001 C CNN
@@ -1281,7 +1242,7 @@ F 3 "" H 4600 1850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L -12V #PWR23
+L pocket_mixer-rescue:-12V #PWR23
 U 1 1 5941A55F
 P 4600 3550
 F 0 "#PWR23" H 4600 3650 50  0001 C CNN
@@ -1292,7 +1253,7 @@ F 3 "" H 4600 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR027
+L pocket_mixer-rescue:+12V #PWR027
 U 1 1 5941A7DD
 P 4600 4150
 F 0 "#PWR027" H 4600 4000 50  0001 C CNN
@@ -1303,7 +1264,7 @@ F 3 "" H 4600 4150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L -12V #PWR3
+L pocket_mixer-rescue:-12V #PWR3
 U 1 1 5941A9E0
 P 2150 5200
 F 0 "#PWR3" H 2150 5300 50  0001 C CNN
@@ -1314,7 +1275,7 @@ F 3 "" H 2150 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L -12V #PWR13
+L pocket_mixer-rescue:-12V #PWR13
 U 1 1 5941AB66
 P 3700 5300
 F 0 "#PWR13" H 3700 5400 50  0001 C CNN
@@ -1325,7 +1286,7 @@ F 3 "" H 3700 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR028
+L pocket_mixer-rescue:+12V #PWR028
 U 1 1 5941ACEE
 P 3700 5900
 F 0 "#PWR028" H 3700 5750 50  0001 C CNN
@@ -1336,7 +1297,7 @@ F 3 "" H 3700 5900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L +12V #PWR029
+L pocket_mixer-rescue:+12V #PWR029
 U 1 1 5941AE74
 P 2150 5800
 F 0 "#PWR029" H 2150 5650 50  0001 C CNN
@@ -1347,7 +1308,7 @@ F 3 "" H 2150 5800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L -12V #PWR5
+L pocket_mixer-rescue:-12V #PWR5
 U 1 1 5941AFFC
 P 2150 6850
 F 0 "#PWR5" H 2150 6950 50  0001 C CNN
@@ -1358,7 +1319,7 @@ F 3 "" H 2150 6850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR030
+L pocket_mixer-rescue:+12V #PWR030
 U 1 1 5941B184
 P 2150 7450
 F 0 "#PWR030" H 2150 7300 50  0001 C CNN
@@ -1369,7 +1330,7 @@ F 3 "" H 2150 7450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L +12V #PWR031
+L pocket_mixer-rescue:+12V #PWR031
 U 1 1 5941B387
 P 3700 7550
 F 0 "#PWR031" H 3700 7400 50  0001 C CNN
@@ -1380,7 +1341,7 @@ F 3 "" H 3700 7550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L -12V #PWR15
+L pocket_mixer-rescue:-12V #PWR15
 U 1 1 5941B50F
 P 3700 6950
 F 0 "#PWR15" H 3700 7050 50  0001 C CNN
@@ -1391,7 +1352,7 @@ F 3 "" H 3700 6950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L -12V #PWR7
+L pocket_mixer-rescue:-12V #PWR7
 U 1 1 5941E90D
 P 2900 4700
 F 0 "#PWR7" H 2900 4800 50  0001 C CNN
@@ -1402,7 +1363,7 @@ F 3 "" H 2900 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR032
+L pocket_mixer-rescue:+12V #PWR032
 U 1 1 5941EA95
 P 3200 4700
 F 0 "#PWR032" H 3200 4550 50  0001 C CNN
@@ -1413,7 +1374,7 @@ F 3 "" H 3200 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L -12V #PWR19
+L pocket_mixer-rescue:-12V #PWR19
 U 1 1 5941EC1D
 P 4400 4800
 F 0 "#PWR19" H 4400 4900 50  0001 C CNN
@@ -1424,7 +1385,7 @@ F 3 "" H 4400 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR033
+L pocket_mixer-rescue:+12V #PWR033
 U 1 1 5941EDA5
 P 4650 4800
 F 0 "#PWR033" H 4650 4650 50  0001 C CNN
@@ -1435,7 +1396,7 @@ F 3 "" H 4650 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L -12V #PWR40
+L pocket_mixer-rescue:-12V #PWR40
 U 1 1 5941F4AA
 P 7400 1000
 F 0 "#PWR40" H 7400 1100 50  0001 C CNN
@@ -1446,7 +1407,7 @@ F 3 "" H 7400 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR034
+L pocket_mixer-rescue:+12V #PWR034
 U 1 1 5941F632
 P 7650 1000
 F 0 "#PWR034" H 7650 850 50  0001 C CNN
@@ -1457,7 +1418,7 @@ F 3 "" H 7650 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR035
+L pocket_mixer-rescue:+12V #PWR035
 U 1 1 5941FB17
 P 5450 950
 F 0 "#PWR035" H 5450 800 50  0001 C CNN
@@ -1468,7 +1429,7 @@ F 3 "" H 5450 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L -12V #PWR27
+L pocket_mixer-rescue:-12V #PWR27
 U 1 1 5941FC9F
 P 5150 950
 F 0 "#PWR27" H 5150 1050 50  0001 C CNN
@@ -1494,4 +1455,56 @@ Wire Notes Line
 	7000 6450 7000 5600
 Text Notes 7050 5750 0    60   ~ 0
 VU METER
+Wire Wire Line
+	4400 3150 4400 3750
+Wire Wire Line
+	5000 3150 5000 3850
+Wire Wire Line
+	5000 2250 5000 2600
+Wire Wire Line
+	4400 2250 4400 2600
+Wire Wire Line
+	1850 4800 1850 5400
+Wire Wire Line
+	2650 4800 2650 5500
+Wire Wire Line
+	1850 5400 1950 5400
+Wire Wire Line
+	2650 5500 2950 5500
+Wire Wire Line
+	1850 7050 1950 7050
+Wire Wire Line
+	1850 6450 1850 7050
+Wire Wire Line
+	2650 6450 2650 7150
+Wire Wire Line
+	2650 7150 2950 7150
+Wire Wire Line
+	3450 5500 3500 5500
+Wire Wire Line
+	3450 4900 3450 5500
+Wire Wire Line
+	4150 4900 4150 5600
+Wire Wire Line
+	3450 7150 3500 7150
+Wire Wire Line
+	3450 6550 3450 7150
+Wire Wire Line
+	4150 6550 4150 7250
+Wire Wire Line
+	4150 5600 4300 5600
+Wire Wire Line
+	5200 5600 5600 5600
+Wire Wire Line
+	5200 7250 5600 7250
+Wire Wire Line
+	4150 7250 4300 7250
+Wire Wire Line
+	8450 3200 8800 3200
+Wire Wire Line
+	7400 3200 7500 3200
+Wire Wire Line
+	7400 2450 7500 2450
+Wire Wire Line
+	8450 2450 8800 2450
 $EndSCHEMATC
