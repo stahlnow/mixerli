@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name pocket_mixer-rescue)(type Legacy)(uri ${KIPRJMOD}/pocket_mixer-rescue.lib)(options "")(descr ""))
-  (lib (name stahllabs)(type Legacy)(uri /home/stahl/kicad/libs/stahllabs/library/stahllabs.lib)(options "")(descr ""))
-)

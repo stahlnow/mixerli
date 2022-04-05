@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name pocket_mixer-rescue)(type Legacy)(uri ${KIPRJMOD}/pocket_mixer-rescue.lib)(options "")(descr ""))
-)

@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:pocket_mixer-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 2 10
 Title ""
 Date ""
 Rev ""
@@ -36,10 +35,6 @@ Wire Notes Line
 	4150 2950 4700 2950
 Wire Notes Line
 	4150 1750 4150 2950
-Wire Wire Line
-	3600 2850 4000 2850
-Wire Wire Line
-	3600 1850 4000 1850
 Connection ~ 4000 2850
 Connection ~ 4000 1850
 Wire Notes Line
@@ -85,7 +80,7 @@ Text HLabel 4200 2850 2    60   Output ~ 0
 Text HLabel 4200 1850 2    60   Output ~ 0
 1-RIGHT
 $Comp
-L pocket_mixer-rescue:GND #PWR036
+L power:GND #PWR036
 U 1 1 5921B74C
 P 1700 1950
 AR Path="/5921B74C" Ref="#PWR036"  Part="1" 
@@ -98,7 +93,7 @@ F 3 "" H 1700 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:GND #PWR037
+L power:GND #PWR037
 U 1 1 5921B752
 P 1700 2450
 AR Path="/5921B752" Ref="#PWR037"  Part="1" 
@@ -113,7 +108,7 @@ $EndComp
 Text Notes 1650 1850 0    60   ~ 0
 LEVEL
 $Comp
-L pocket_mixer-rescue:C C27
+L Device:C C27
 U 1 1 5921B767
 P 4700 1200
 AR Path="/5921B767" Ref="C27"  Part="1" 
@@ -126,7 +121,7 @@ F 3 "" H 4700 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:C C25
+L Device:C C25
 U 1 1 5921B76E
 P 4350 1200
 AR Path="/5921B76E" Ref="C25"  Part="1" 
@@ -139,33 +134,33 @@ F 3 "" H 4350 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:GND #PWR038
+L power:GND #PWR038
 U 1 1 5921B775
-P 4700 1350
+P 4700 1400
 AR Path="/5921B775" Ref="#PWR038"  Part="1" 
 AR Path="/592186CB/5921B775" Ref="#PWR038"  Part="1" 
-F 0 "#PWR038" H 4700 1100 50  0001 C CNN
-F 1 "GND" H 4700 1200 50  0000 C CNN
-F 2 "" H 4700 1350 50  0001 C CNN
-F 3 "" H 4700 1350 50  0001 C CNN
-	1    4700 1350
+F 0 "#PWR038" H 4700 1150 50  0001 C CNN
+F 1 "GND" H 4700 1250 50  0000 C CNN
+F 2 "" H 4700 1400 50  0001 C CNN
+F 3 "" H 4700 1400 50  0001 C CNN
+	1    4700 1400
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:GND #PWR039
+L power:GND #PWR039
 U 1 1 5921B77B
-P 4350 1350
+P 4350 1400
 AR Path="/5921B77B" Ref="#PWR039"  Part="1" 
 AR Path="/592186CB/5921B77B" Ref="#PWR039"  Part="1" 
-F 0 "#PWR039" H 4350 1100 50  0001 C CNN
-F 1 "GND" H 4350 1200 50  0000 C CNN
-F 2 "" H 4350 1350 50  0001 C CNN
-F 3 "" H 4350 1350 50  0001 C CNN
-	1    4350 1350
+F 0 "#PWR039" H 4350 1150 50  0001 C CNN
+F 1 "GND" H 4350 1250 50  0000 C CNN
+F 2 "" H 4350 1400 50  0001 C CNN
+F 3 "" H 4350 1400 50  0001 C CNN
+	1    4350 1400
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:POT_Dual RV2
+L Device:R_POT_Dual RV2
 U 1 1 5921B78D
 P 1950 2350
 AR Path="/5921B78D" Ref="RV2"  Part="1" 
@@ -178,12 +173,12 @@ F 3 "" H 2200 2275 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pocket_mixer-rescue:GND #PWR040
+L power:GND #PWR040
 U 1 1 5921B7A2
 P 3050 3050
 AR Path="/5921B7A2" Ref="#PWR040"  Part="1" 
-AR Path="/592186CB/5921B7A2" Ref="#PWR040"  Part="1" 
-F 0 "#PWR040" H 3050 2800 50  0001 C CNN
+AR Path="/592186CB/5921B7A2" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 3050 2800 50  0001 C CNN
 F 1 "GND" H 3050 2900 50  0000 C CNN
 F 2 "" H 3050 3050 50  0001 C CNN
 F 3 "" H 3050 3050 50  0001 C CNN
@@ -191,7 +186,7 @@ F 3 "" H 3050 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:GND #PWR041
+L power:GND #PWR041
 U 1 1 5921B7A8
 P 3050 2250
 AR Path="/5921B7A8" Ref="#PWR041"  Part="1" 
@@ -204,7 +199,7 @@ F 3 "" H 3050 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:R R22
+L Device:R R22
 U 1 1 5921B7AE
 P 3050 2900
 AR Path="/5921B7AE" Ref="R22"  Part="1" 
@@ -217,7 +212,7 @@ F 3 "" H 3050 2900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pocket_mixer-rescue:R R21
+L Device:R R21
 U 1 1 5921B7B5
 P 3050 2100
 AR Path="/5921B7B5" Ref="R21"  Part="1" 
@@ -230,7 +225,7 @@ F 3 "" H 3050 2100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pocket_mixer-rescue:GND #PWR042
+L power:GND #PWR042
 U 1 1 5921B7D0
 P 2700 3900
 AR Path="/5921B7D0" Ref="#PWR042"  Part="1" 
@@ -243,7 +238,7 @@ F 3 "" H 2700 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:R R18
+L Device:R R18
 U 1 1 5921B7D6
 P 3000 3800
 AR Path="/5921B7D6" Ref="R18"  Part="1" 
@@ -256,7 +251,7 @@ F 3 "" H 3000 3800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pocket_mixer-rescue:GND #PWR043
+L power:GND #PWR043
 U 1 1 5921B7DD
 P 2700 950
 AR Path="/5921B7DD" Ref="#PWR043"  Part="1" 
@@ -269,7 +264,7 @@ F 3 "" H 2700 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:R R17
+L Device:R R17
 U 1 1 5921B7E3
 P 3000 850
 AR Path="/5921B7E3" Ref="R17"  Part="1" 
@@ -282,7 +277,7 @@ F 3 "" H 3000 850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pocket_mixer-rescue:C C22
+L Device:C C22
 U 1 1 5921B7EA
 P 3650 3550
 AR Path="/5921B7EA" Ref="C22"  Part="1" 
@@ -295,7 +290,7 @@ F 3 "" H 3650 3550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pocket_mixer-rescue:C C21
+L Device:C C21
 U 1 1 5921B7F1
 P 3650 1150
 AR Path="/5921B7F1" Ref="C21"  Part="1" 
@@ -308,7 +303,7 @@ F 3 "" H 3650 1150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pocket_mixer-rescue:R R26
+L Device:R R26
 U 1 1 5921B7F8
 P 3650 3800
 AR Path="/5921B7F8" Ref="R26"  Part="1" 
@@ -321,7 +316,7 @@ F 3 "" H 3650 3800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pocket_mixer-rescue:R R25
+L Device:R R25
 U 1 1 5921B7FF
 P 3650 850
 AR Path="/5921B7FF" Ref="R25"  Part="1" 
@@ -334,13 +329,13 @@ F 3 "" H 3650 850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pocket_mixer-rescue:4558 U5
+L Amplifier_Operational:NJM4580 U5
 U 2 1 5921B818
 P 3700 2850
 AR Path="/5921B818" Ref="U5"  Part="2" 
 AR Path="/592186CB/5921B818" Ref="U5"  Part="2" 
-F 0 "U5" H 3700 3050 50  0000 L CNN
-F 1 "4580" H 3700 2650 50  0000 L CNN
+F 0 "U5" H 3650 3100 50  0000 L CNN
+F 1 "NJM4580" H 3550 2600 50  0000 L CNN
 F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 3700 2850 50  0001 C CNN
 F 3 "" H 3700 2850 50  0001 C CNN
 F 4 "NJM4580E-TE1" H 3700 2850 60  0001 C CNN "MFN"
@@ -348,13 +343,13 @@ F 4 "NJM4580E-TE1" H 3700 2850 60  0001 C CNN "MFN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:4558 U5
+L Amplifier_Operational:NJM4580 U5
 U 1 1 5921B81F
 P 3700 1850
 AR Path="/5921B81F" Ref="U5"  Part="1" 
 AR Path="/592186CB/5921B81F" Ref="U5"  Part="1" 
-F 0 "U5" H 3700 2050 50  0000 L CNN
-F 1 "4580" H 3700 1650 50  0000 L CNN
+F 0 "U5" H 3650 1650 50  0000 L CNN
+F 1 "NJM4580" H 3550 2100 50  0000 L CNN
 F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 3700 1850 50  0001 C CNN
 F 3 "" H 3700 1850 50  0001 C CNN
 F 4 "NJM4580E-TE1" H 3700 1850 60  0001 C CNN "MFN"
@@ -365,12 +360,8 @@ Text Notes 900  2150 0    60   ~ 0
 INPUT 1
 Wire Wire Line
 	1850 2350 1850 2250
-Wire Wire Line
-	1300 2350 1850 2350
-Wire Wire Line
-	1500 2500 1500 2800
 $Comp
-L pocket_mixer-rescue:GND #PWR044
+L power:GND #PWR044
 U 1 1 59299CEB
 P 1350 2650
 AR Path="/59299CEB" Ref="#PWR044"  Part="1" 
@@ -387,7 +378,7 @@ Wire Wire Line
 Wire Wire Line
 	1350 2550 1350 2650
 $Comp
-L pocket_mixer-rescue:PJ3410 J3
+L stahllabs:PJ3410 J3
 U 1 1 592F7D7F
 P 1300 2450
 AR Path="/592F7D7F" Ref="J3"  Part="1" 
@@ -400,7 +391,7 @@ F 3 "https://www.thonk.co.uk/shop/pj3410/" H 1100 2150 21  0001 C BIN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:CP C17
+L Device:CP C17
 U 1 1 5931EAF6
 P 2700 1950
 AR Path="/5931EAF6" Ref="C17"  Part="1" 
@@ -413,7 +404,7 @@ F 3 "" H 2700 1950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L pocket_mixer-rescue:CP C18
+L Device:CP C18
 U 1 1 592667DD
 P 2700 2750
 AR Path="/592667DD" Ref="C18"  Part="1" 
@@ -425,8 +416,6 @@ F 3 "" H 2700 2750 50  0001 C CNN
 	1    2700 2750
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	1500 2500 1300 2500
 Wire Wire Line
 	3300 1750 3400 1750
 Wire Wire Line
@@ -469,10 +458,6 @@ Wire Notes Line
 	8950 2950 9500 2950
 Wire Notes Line
 	8950 1750 8950 2950
-Wire Wire Line
-	8400 2850 8800 2850
-Wire Wire Line
-	8400 1850 8800 1850
 Connection ~ 8800 2850
 Connection ~ 8800 1850
 Wire Notes Line
@@ -518,7 +503,7 @@ Text HLabel 9000 2850 2    60   Output ~ 0
 Text HLabel 9000 1850 2    60   Output ~ 0
 3-RIGHT
 $Comp
-L pocket_mixer-rescue:GND #PWR045
+L power:GND #PWR045
 U 1 1 59286A81
 P 6500 1950
 AR Path="/59286A81" Ref="#PWR045"  Part="1" 
@@ -531,7 +516,7 @@ F 3 "" H 6500 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:GND #PWR046
+L power:GND #PWR046
 U 1 1 59286A87
 P 6500 2450
 AR Path="/59286A87" Ref="#PWR046"  Part="1" 
@@ -546,7 +531,7 @@ $EndComp
 Text Notes 6450 1850 0    60   ~ 0
 LEVEL
 $Comp
-L pocket_mixer-rescue:C C34
+L Device:C C34
 U 1 1 59286A8E
 P 9500 1200
 AR Path="/59286A8E" Ref="C34"  Part="1" 
@@ -559,7 +544,7 @@ F 3 "" H 9500 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:C C33
+L Device:C C33
 U 1 1 59286A94
 P 9150 1200
 AR Path="/59286A94" Ref="C33"  Part="1" 
@@ -572,33 +557,33 @@ F 3 "" H 9150 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:GND #PWR047
+L power:GND #PWR047
 U 1 1 59286A9A
-P 9500 1350
+P 9500 1400
 AR Path="/59286A9A" Ref="#PWR047"  Part="1" 
-AR Path="/592186CB/59286A9A" Ref="#PWR047"  Part="1" 
-F 0 "#PWR047" H 9500 1100 50  0001 C CNN
-F 1 "GND" H 9500 1200 50  0000 C CNN
-F 2 "" H 9500 1350 50  0001 C CNN
-F 3 "" H 9500 1350 50  0001 C CNN
-	1    9500 1350
+AR Path="/592186CB/59286A9A" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 9500 1150 50  0001 C CNN
+F 1 "GND" H 9500 1250 50  0000 C CNN
+F 2 "" H 9500 1400 50  0001 C CNN
+F 3 "" H 9500 1400 50  0001 C CNN
+	1    9500 1400
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:GND #PWR048
+L power:GND #PWR048
 U 1 1 59286AA0
-P 9150 1350
+P 9150 1400
 AR Path="/59286AA0" Ref="#PWR048"  Part="1" 
 AR Path="/592186CB/59286AA0" Ref="#PWR048"  Part="1" 
-F 0 "#PWR048" H 9150 1100 50  0001 C CNN
-F 1 "GND" H 9150 1200 50  0000 C CNN
-F 2 "" H 9150 1350 50  0001 C CNN
-F 3 "" H 9150 1350 50  0001 C CNN
-	1    9150 1350
+F 0 "#PWR048" H 9150 1150 50  0001 C CNN
+F 1 "GND" H 9150 1250 50  0000 C CNN
+F 2 "" H 9150 1400 50  0001 C CNN
+F 3 "" H 9150 1400 50  0001 C CNN
+	1    9150 1400
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:POT_Dual RV4
+L Device:R_POT_Dual RV4
 U 1 1 59286AB2
 P 6750 2350
 AR Path="/59286AB2" Ref="RV4"  Part="1" 
@@ -611,7 +596,7 @@ F 3 "" H 7000 2275 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pocket_mixer-rescue:GND #PWR049
+L power:GND #PWR049
 U 1 1 59286AB8
 P 7850 3050
 AR Path="/59286AB8" Ref="#PWR049"  Part="1" 
@@ -624,7 +609,7 @@ F 3 "" H 7850 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:GND #PWR050
+L power:GND #PWR050
 U 1 1 59286ABE
 P 7850 2250
 AR Path="/59286ABE" Ref="#PWR050"  Part="1" 
@@ -637,7 +622,7 @@ F 3 "" H 7850 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:R R32
+L Device:R R32
 U 1 1 59286AC4
 P 7850 2900
 AR Path="/59286AC4" Ref="R32"  Part="1" 
@@ -650,7 +635,7 @@ F 3 "" H 7850 2900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pocket_mixer-rescue:R R31
+L Device:R R31
 U 1 1 59286ACA
 P 7850 2100
 AR Path="/59286ACA" Ref="R31"  Part="1" 
@@ -663,7 +648,7 @@ F 3 "" H 7850 2100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pocket_mixer-rescue:GND #PWR051
+L power:GND #PWR051
 U 1 1 59286AD6
 P 7500 3900
 AR Path="/59286AD6" Ref="#PWR051"  Part="1" 
@@ -676,7 +661,7 @@ F 3 "" H 7500 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:R R30
+L Device:R R30
 U 1 1 59286ADC
 P 7800 3800
 AR Path="/59286ADC" Ref="R30"  Part="1" 
@@ -689,7 +674,7 @@ F 3 "" H 7800 3800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pocket_mixer-rescue:GND #PWR052
+L power:GND #PWR052
 U 1 1 59286AE2
 P 7500 950
 AR Path="/59286AE2" Ref="#PWR052"  Part="1" 
@@ -702,7 +687,7 @@ F 3 "" H 7500 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:R R29
+L Device:R R29
 U 1 1 59286AE8
 P 7800 850
 AR Path="/59286AE8" Ref="R29"  Part="1" 
@@ -715,7 +700,7 @@ F 3 "" H 7800 850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pocket_mixer-rescue:C C32
+L Device:C C32
 U 1 1 59286AEE
 P 8450 3550
 AR Path="/59286AEE" Ref="C32"  Part="1" 
@@ -728,7 +713,7 @@ F 3 "" H 8450 3550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pocket_mixer-rescue:C C31
+L Device:C C31
 U 1 1 59286AF4
 P 8450 1150
 AR Path="/59286AF4" Ref="C31"  Part="1" 
@@ -741,7 +726,7 @@ F 3 "" H 8450 1150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pocket_mixer-rescue:R R34
+L Device:R R34
 U 1 1 59286AFA
 P 8450 3800
 AR Path="/59286AFA" Ref="R34"  Part="1" 
@@ -754,7 +739,7 @@ F 3 "" H 8450 3800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pocket_mixer-rescue:R R33
+L Device:R R33
 U 1 1 59286B00
 P 8450 850
 AR Path="/59286B00" Ref="R33"  Part="1" 
@@ -767,13 +752,13 @@ F 3 "" H 8450 850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pocket_mixer-rescue:4558 U7
+L Amplifier_Operational:NJM4580 U7
 U 2 1 59286B18
 P 8500 2850
 AR Path="/59286B18" Ref="U7"  Part="2" 
 AR Path="/592186CB/59286B18" Ref="U7"  Part="2" 
-F 0 "U7" H 8500 3050 50  0000 L CNN
-F 1 "4580" H 8500 2650 50  0000 L CNN
+F 0 "U7" H 8450 3050 50  0000 L CNN
+F 1 "NJM4580" H 8350 2600 50  0000 L CNN
 F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 8500 2850 50  0001 C CNN
 F 3 "" H 8500 2850 50  0001 C CNN
 F 4 "NJM4580E-TE1" H 8500 2850 60  0001 C CNN "MFN"
@@ -781,13 +766,13 @@ F 4 "NJM4580E-TE1" H 8500 2850 60  0001 C CNN "MFN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:4558 U7
+L Amplifier_Operational:NJM4580 U7
 U 1 1 59286B1E
 P 8500 1850
 AR Path="/59286B1E" Ref="U7"  Part="1" 
 AR Path="/592186CB/59286B1E" Ref="U7"  Part="1" 
-F 0 "U7" H 8500 2050 50  0000 L CNN
-F 1 "4580" H 8500 1650 50  0000 L CNN
+F 0 "U7" H 8450 1650 50  0000 L CNN
+F 1 "NJM4580" H 8350 2100 50  0000 L CNN
 F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 8500 1850 50  0001 C CNN
 F 3 "" H 8500 1850 50  0001 C CNN
 F 4 "NJM4580E-TE1" H 8500 1850 60  0001 C CNN "MFN"
@@ -799,11 +784,11 @@ INPUT 3
 Wire Wire Line
 	6650 2350 6650 2250
 Wire Wire Line
-	6100 2350 6650 2350
+	6100 2350 6300 2350
 Wire Wire Line
-	6300 2500 6300 2800
+	6300 2500 6300 2650
 $Comp
-L pocket_mixer-rescue:GND #PWR053
+L power:GND #PWR053
 U 1 1 59286B2A
 P 6150 2650
 AR Path="/59286B2A" Ref="#PWR053"  Part="1" 
@@ -820,7 +805,7 @@ Wire Wire Line
 Wire Wire Line
 	6150 2550 6150 2650
 $Comp
-L pocket_mixer-rescue:PJ3410 J5
+L stahllabs:PJ3410 J5
 U 1 1 59286B32
 P 6100 2450
 AR Path="/59286B32" Ref="J5"  Part="1" 
@@ -833,7 +818,7 @@ F 3 "https://www.thonk.co.uk/shop/pj3410/" H 5900 2150 21  0001 C BIN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:CP C29
+L Device:CP C29
 U 1 1 59286B38
 P 7500 1950
 AR Path="/59286B38" Ref="C29"  Part="1" 
@@ -846,7 +831,7 @@ F 3 "" H 7500 1950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L pocket_mixer-rescue:CP C30
+L Device:CP C30
 U 1 1 59286B3E
 P 7500 2750
 AR Path="/59286B3E" Ref="C30"  Part="1" 
@@ -902,10 +887,6 @@ Wire Notes Line
 	4150 6450 4700 6450
 Wire Notes Line
 	4150 5250 4150 6450
-Wire Wire Line
-	3600 6350 4000 6350
-Wire Wire Line
-	3600 5350 4000 5350
 Connection ~ 4000 6350
 Connection ~ 4000 5350
 Wire Notes Line
@@ -953,7 +934,7 @@ Text HLabel 4200 5350 2    60   Output ~ 0
 Text Notes 1650 5350 0    60   ~ 0
 LEVEL
 $Comp
-L pocket_mixer-rescue:C C28
+L Device:C C28
 U 1 1 592880E7
 P 4700 4700
 AR Path="/592880E7" Ref="C28"  Part="1" 
@@ -966,7 +947,7 @@ F 3 "" H 4700 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:C C26
+L Device:C C26
 U 1 1 592880ED
 P 4350 4700
 AR Path="/592880ED" Ref="C26"  Part="1" 
@@ -979,7 +960,7 @@ F 3 "" H 4350 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:POT_Dual RV3
+L Device:R_POT_Dual RV3
 U 1 1 5928810B
 P 1950 5850
 AR Path="/5928810B" Ref="RV3"  Part="1" 
@@ -992,7 +973,7 @@ F 3 "" H 2200 5775 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pocket_mixer-rescue:GND #PWR054
+L power:GND #PWR054
 U 1 1 59288111
 P 3050 6550
 AR Path="/59288111" Ref="#PWR054"  Part="1" 
@@ -1005,7 +986,7 @@ F 3 "" H 3050 6550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:GND #PWR055
+L power:GND #PWR055
 U 1 1 59288117
 P 3050 5750
 AR Path="/59288117" Ref="#PWR055"  Part="1" 
@@ -1018,7 +999,7 @@ F 3 "" H 3050 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:R R24
+L Device:R R24
 U 1 1 5928811D
 P 3050 6400
 AR Path="/5928811D" Ref="R24"  Part="1" 
@@ -1031,7 +1012,7 @@ F 3 "" H 3050 6400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pocket_mixer-rescue:R R23
+L Device:R R23
 U 1 1 59288123
 P 3050 5600
 AR Path="/59288123" Ref="R23"  Part="1" 
@@ -1044,7 +1025,7 @@ F 3 "" H 3050 5600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L pocket_mixer-rescue:GND #PWR056
+L power:GND #PWR056
 U 1 1 5928812F
 P 2700 7400
 AR Path="/5928812F" Ref="#PWR056"  Part="1" 
@@ -1057,7 +1038,7 @@ F 3 "" H 2700 7400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:R R20
+L Device:R R20
 U 1 1 59288135
 P 3000 7300
 AR Path="/59288135" Ref="R20"  Part="1" 
@@ -1070,7 +1051,7 @@ F 3 "" H 3000 7300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pocket_mixer-rescue:GND #PWR057
+L power:GND #PWR057
 U 1 1 5928813B
 P 2700 4450
 AR Path="/5928813B" Ref="#PWR057"  Part="1" 
@@ -1083,7 +1064,7 @@ F 3 "" H 2700 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:R R19
+L Device:R R19
 U 1 1 59288141
 P 3000 4350
 AR Path="/59288141" Ref="R19"  Part="1" 
@@ -1096,7 +1077,7 @@ F 3 "" H 3000 4350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pocket_mixer-rescue:C C24
+L Device:C C24
 U 1 1 59288147
 P 3650 7050
 AR Path="/59288147" Ref="C24"  Part="1" 
@@ -1109,7 +1090,7 @@ F 3 "" H 3650 7050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pocket_mixer-rescue:C C23
+L Device:C C23
 U 1 1 5928814D
 P 3650 4650
 AR Path="/5928814D" Ref="C23"  Part="1" 
@@ -1122,7 +1103,7 @@ F 3 "" H 3650 4650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pocket_mixer-rescue:R R28
+L Device:R R28
 U 1 1 59288153
 P 3650 7300
 AR Path="/59288153" Ref="R28"  Part="1" 
@@ -1135,7 +1116,7 @@ F 3 "" H 3650 7300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pocket_mixer-rescue:R R27
+L Device:R R27
 U 1 1 59288159
 P 3650 4350
 AR Path="/59288159" Ref="R27"  Part="1" 
@@ -1148,13 +1129,13 @@ F 3 "" H 3650 4350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L pocket_mixer-rescue:4558 U6
+L Amplifier_Operational:NJM4580 U6
 U 2 1 59288171
 P 3700 6350
 AR Path="/59288171" Ref="U6"  Part="2" 
 AR Path="/592186CB/59288171" Ref="U6"  Part="2" 
-F 0 "U6" H 3700 6550 50  0000 L CNN
-F 1 "4580" H 3700 6150 50  0000 L CNN
+F 0 "U6" H 3650 6550 50  0000 L CNN
+F 1 "NJM4580" H 3550 6100 50  0000 L CNN
 F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 3700 6350 50  0001 C CNN
 F 3 "" H 3700 6350 50  0001 C CNN
 F 4 "NJM4580E-TE1" H 3700 6350 60  0001 C CNN "MFN"
@@ -1162,13 +1143,13 @@ F 4 "NJM4580E-TE1" H 3700 6350 60  0001 C CNN "MFN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:4558 U6
+L Amplifier_Operational:NJM4580 U6
 U 1 1 59288177
 P 3700 5350
 AR Path="/59288177" Ref="U6"  Part="1" 
 AR Path="/592186CB/59288177" Ref="U6"  Part="1" 
-F 0 "U6" H 3700 5550 50  0000 L CNN
-F 1 "4580" H 3700 5150 50  0000 L CNN
+F 0 "U6" H 3650 5150 50  0000 L CNN
+F 1 "NJM4580" H 3550 5650 50  0000 L CNN
 F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 3700 5350 50  0001 C CNN
 F 3 "" H 3700 5350 50  0001 C CNN
 F 4 "NJM4580E-TE1" H 3700 5350 60  0001 C CNN "MFN"
@@ -1180,11 +1161,11 @@ INPUT 2
 Wire Wire Line
 	1850 5850 1850 5750
 Wire Wire Line
-	1300 5850 1850 5850
+	1300 5850 1500 5850
 Wire Wire Line
-	1500 6000 1500 6300
+	1500 6000 1500 6150
 $Comp
-L pocket_mixer-rescue:GND #PWR058
+L power:GND #PWR058
 U 1 1 59288183
 P 1350 6150
 AR Path="/59288183" Ref="#PWR058"  Part="1" 
@@ -1201,7 +1182,7 @@ Wire Wire Line
 Wire Wire Line
 	1350 6050 1350 6150
 $Comp
-L pocket_mixer-rescue:PJ3410 J4
+L stahllabs:PJ3410 J4
 U 1 1 5928818B
 P 1300 5950
 AR Path="/5928818B" Ref="J4"  Part="1" 
@@ -1214,7 +1195,7 @@ F 3 "https://www.thonk.co.uk/shop/pj3410/" H 1100 5650 21  0001 C BIN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:CP C19
+L Device:CP C19
 U 1 1 59288191
 P 2700 5450
 AR Path="/59288191" Ref="C19"  Part="1" 
@@ -1227,7 +1208,7 @@ F 3 "" H 2700 5450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L pocket_mixer-rescue:CP C20
+L Device:CP C20
 U 1 1 59288197
 P 2700 6250
 AR Path="/59288197" Ref="C20"  Part="1" 
@@ -1265,33 +1246,33 @@ NoConn ~ 1300 2450
 NoConn ~ 1300 5950
 NoConn ~ 6100 2450
 $Comp
-L pocket_mixer-rescue:GND #PWR059
+L power:GND #PWR059
 U 1 1 59374FDB
-P 4700 4850
+P 4700 4900
 AR Path="/59374FDB" Ref="#PWR059"  Part="1" 
 AR Path="/592186CB/59374FDB" Ref="#PWR059"  Part="1" 
-F 0 "#PWR059" H 4700 4600 50  0001 C CNN
-F 1 "GND" H 4700 4700 50  0000 C CNN
-F 2 "" H 4700 4850 50  0001 C CNN
-F 3 "" H 4700 4850 50  0001 C CNN
-	1    4700 4850
+F 0 "#PWR059" H 4700 4650 50  0001 C CNN
+F 1 "GND" H 4700 4750 50  0000 C CNN
+F 2 "" H 4700 4900 50  0001 C CNN
+F 3 "" H 4700 4900 50  0001 C CNN
+	1    4700 4900
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:GND #PWR060
+L power:GND #PWR060
 U 1 1 59375270
-P 4350 4850
+P 4350 4900
 AR Path="/59375270" Ref="#PWR060"  Part="1" 
 AR Path="/592186CB/59375270" Ref="#PWR060"  Part="1" 
-F 0 "#PWR060" H 4350 4600 50  0001 C CNN
-F 1 "GND" H 4350 4700 50  0000 C CNN
-F 2 "" H 4350 4850 50  0001 C CNN
-F 3 "" H 4350 4850 50  0001 C CNN
-	1    4350 4850
+F 0 "#PWR060" H 4350 4650 50  0001 C CNN
+F 1 "GND" H 4350 4750 50  0000 C CNN
+F 2 "" H 4350 4900 50  0001 C CNN
+F 3 "" H 4350 4900 50  0001 C CNN
+	1    4350 4900
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:GND #PWR061
+L power:GND #PWR061
 U 1 1 59375715
 P 1700 5950
 AR Path="/59375715" Ref="#PWR061"  Part="1" 
@@ -1304,7 +1285,7 @@ F 3 "" H 1700 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:GND #PWR062
+L power:GND #PWR062
 U 1 1 593771E7
 P 1700 5450
 AR Path="/593771E7" Ref="#PWR062"  Part="1" 
@@ -1317,237 +1298,133 @@ F 3 "" H 1700 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:-12V #PWR63
+L power:-12V #PWR63
 U 1 1 5941BC8B
-P 3600 1550
+P 5050 1550
 AR Path="/5941BC8B" Ref="#PWR63"  Part="1" 
-AR Path="/592186CB/5941BC8B" Ref="#PWR63"  Part="1" 
-F 0 "#PWR63" H 3600 1650 50  0001 C CNN
-F 1 "-12V" H 3600 1700 50  0000 C CNN
-F 2 "" H 3600 1550 50  0001 C CNN
-F 3 "" H 3600 1550 50  0001 C CNN
-	1    3600 1550
-	1    0    0    -1  
+AR Path="/592186CB/5941BC8B" Ref="#PWR063"  Part="1" 
+F 0 "#PWR063" H 5050 1650 50  0001 C CNN
+F 1 "-12V" H 5050 1700 50  0000 C CNN
+F 2 "" H 5050 1550 50  0001 C CNN
+F 3 "" H 5050 1550 50  0001 C CNN
+	1    5050 1550
+	-1   0    0    1   
 $EndComp
 $Comp
-L pocket_mixer-rescue:+12V #PWR063
+L power:+12V #PWR063
 U 1 1 5941BD32
-P 3600 2150
+P 5050 850
 AR Path="/5941BD32" Ref="#PWR063"  Part="1" 
-AR Path="/592186CB/5941BD32" Ref="#PWR063"  Part="1" 
-F 0 "#PWR063" H 3600 2000 50  0001 C CNN
-F 1 "+12V" H 3600 2290 50  0000 C CNN
-F 2 "" H 3600 2150 50  0001 C CNN
-F 3 "" H 3600 2150 50  0001 C CNN
-	1    3600 2150
-	-1   0    0    1   
-$EndComp
-$Comp
-L pocket_mixer-rescue:+12V #PWR064
-U 1 1 5941BDD9
-P 3600 2550
-AR Path="/5941BDD9" Ref="#PWR064"  Part="1" 
-AR Path="/592186CB/5941BDD9" Ref="#PWR064"  Part="1" 
-F 0 "#PWR064" H 3600 2400 50  0001 C CNN
-F 1 "+12V" H 3600 2690 50  0000 C CNN
-F 2 "" H 3600 2550 50  0001 C CNN
-F 3 "" H 3600 2550 50  0001 C CNN
-	1    3600 2550
+AR Path="/592186CB/5941BD32" Ref="#PWR0111"  Part="1" 
+F 0 "#PWR0111" H 5050 700 50  0001 C CNN
+F 1 "+12V" H 5050 990 50  0000 C CNN
+F 2 "" H 5050 850 50  0001 C CNN
+F 3 "" H 5050 850 50  0001 C CNN
+	1    5050 850 
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:-12V #PWR66
-U 1 1 5941BE80
-P 3600 3150
-AR Path="/5941BE80" Ref="#PWR66"  Part="1" 
-AR Path="/592186CB/5941BE80" Ref="#PWR66"  Part="1" 
-F 0 "#PWR66" H 3600 3250 50  0001 C CNN
-F 1 "-12V" H 3600 3300 50  0000 C CNN
-F 2 "" H 3600 3150 50  0001 C CNN
-F 3 "" H 3600 3150 50  0001 C CNN
-	1    3600 3150
-	-1   0    0    1   
-$EndComp
-$Comp
-L pocket_mixer-rescue:-12V #PWR67
+L power:-12V #PWR67
 U 1 1 5941C015
-P 3600 5050
+P 5050 5050
 AR Path="/5941C015" Ref="#PWR67"  Part="1" 
-AR Path="/592186CB/5941C015" Ref="#PWR67"  Part="1" 
-F 0 "#PWR67" H 3600 5150 50  0001 C CNN
-F 1 "-12V" H 3600 5200 50  0000 C CNN
-F 2 "" H 3600 5050 50  0001 C CNN
-F 3 "" H 3600 5050 50  0001 C CNN
-	1    3600 5050
-	1    0    0    -1  
+AR Path="/592186CB/5941C015" Ref="#PWR067"  Part="1" 
+F 0 "#PWR067" H 5050 5150 50  0001 C CNN
+F 1 "-12V" H 5050 5200 50  0000 C CNN
+F 2 "" H 5050 5050 50  0001 C CNN
+F 3 "" H 5050 5050 50  0001 C CNN
+	1    5050 5050
+	-1   0    0    1   
 $EndComp
 $Comp
-L pocket_mixer-rescue:+12V #PWR065
+L power:+12V #PWR065
 U 1 1 5941C0BC
-P 3600 5650
+P 5050 4350
 AR Path="/5941C0BC" Ref="#PWR065"  Part="1" 
 AR Path="/592186CB/5941C0BC" Ref="#PWR065"  Part="1" 
-F 0 "#PWR065" H 3600 5500 50  0001 C CNN
-F 1 "+12V" H 3600 5790 50  0000 C CNN
-F 2 "" H 3600 5650 50  0001 C CNN
-F 3 "" H 3600 5650 50  0001 C CNN
-	1    3600 5650
-	-1   0    0    1   
-$EndComp
-$Comp
-L pocket_mixer-rescue:+12V #PWR066
-U 1 1 5941C161
-P 3600 6050
-AR Path="/5941C161" Ref="#PWR066"  Part="1" 
-AR Path="/592186CB/5941C161" Ref="#PWR066"  Part="1" 
-F 0 "#PWR066" H 3600 5900 50  0001 C CNN
-F 1 "+12V" H 3600 6190 50  0000 C CNN
-F 2 "" H 3600 6050 50  0001 C CNN
-F 3 "" H 3600 6050 50  0001 C CNN
-	1    3600 6050
+F 0 "#PWR065" H 5050 4200 50  0001 C CNN
+F 1 "+12V" H 5050 4490 50  0000 C CNN
+F 2 "" H 5050 4350 50  0001 C CNN
+F 3 "" H 5050 4350 50  0001 C CNN
+	1    5050 4350
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:-12V #PWR70
-U 1 1 5941C208
-P 3600 6650
-AR Path="/5941C208" Ref="#PWR70"  Part="1" 
-AR Path="/592186CB/5941C208" Ref="#PWR70"  Part="1" 
-F 0 "#PWR70" H 3600 6750 50  0001 C CNN
-F 1 "-12V" H 3600 6800 50  0000 C CNN
-F 2 "" H 3600 6650 50  0001 C CNN
-F 3 "" H 3600 6650 50  0001 C CNN
-	1    3600 6650
-	-1   0    0    1   
-$EndComp
-$Comp
-L pocket_mixer-rescue:-12V #PWR86
-U 1 1 5941C48F
-P 8400 1550
-AR Path="/5941C48F" Ref="#PWR86"  Part="1" 
-AR Path="/592186CB/5941C48F" Ref="#PWR86"  Part="1" 
-F 0 "#PWR86" H 8400 1650 50  0001 C CNN
-F 1 "-12V" H 8400 1700 50  0000 C CNN
-F 2 "" H 8400 1550 50  0001 C CNN
-F 3 "" H 8400 1550 50  0001 C CNN
-	1    8400 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L pocket_mixer-rescue:+12V #PWR067
-U 1 1 5941C536
-P 8400 2150
-AR Path="/5941C536" Ref="#PWR067"  Part="1" 
-AR Path="/592186CB/5941C536" Ref="#PWR067"  Part="1" 
-F 0 "#PWR067" H 8400 2000 50  0001 C CNN
-F 1 "+12V" H 8400 2290 50  0000 C CNN
-F 2 "" H 8400 2150 50  0001 C CNN
-F 3 "" H 8400 2150 50  0001 C CNN
-	1    8400 2150
-	-1   0    0    1   
-$EndComp
-$Comp
-L pocket_mixer-rescue:+12V #PWR068
-U 1 1 5941C5DD
-P 8400 2550
-AR Path="/5941C5DD" Ref="#PWR068"  Part="1" 
-AR Path="/592186CB/5941C5DD" Ref="#PWR068"  Part="1" 
-F 0 "#PWR068" H 8400 2400 50  0001 C CNN
-F 1 "+12V" H 8400 2690 50  0000 C CNN
-F 2 "" H 8400 2550 50  0001 C CNN
-F 3 "" H 8400 2550 50  0001 C CNN
-	1    8400 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L pocket_mixer-rescue:-12V #PWR89
-U 1 1 5941C684
-P 8400 3150
-AR Path="/5941C684" Ref="#PWR89"  Part="1" 
-AR Path="/592186CB/5941C684" Ref="#PWR89"  Part="1" 
-F 0 "#PWR89" H 8400 3250 50  0001 C CNN
-F 1 "-12V" H 8400 3300 50  0000 C CNN
-F 2 "" H 8400 3150 50  0001 C CNN
-F 3 "" H 8400 3150 50  0001 C CNN
-	1    8400 3150
-	-1   0    0    1   
-$EndComp
-$Comp
-L pocket_mixer-rescue:-12V #PWR71
+L power:-12V #PWR71
 U 1 1 59420661
-P 4350 1050
+P 4350 1000
 AR Path="/59420661" Ref="#PWR71"  Part="1" 
-AR Path="/592186CB/59420661" Ref="#PWR71"  Part="1" 
-F 0 "#PWR71" H 4350 1150 50  0001 C CNN
-F 1 "-12V" H 4350 1200 50  0000 C CNN
-F 2 "" H 4350 1050 50  0001 C CNN
-F 3 "" H 4350 1050 50  0001 C CNN
-	1    4350 1050
+AR Path="/592186CB/59420661" Ref="#PWR071"  Part="1" 
+F 0 "#PWR071" H 4350 1100 50  0001 C CNN
+F 1 "-12V" H 4350 1150 50  0000 C CNN
+F 2 "" H 4350 1000 50  0001 C CNN
+F 3 "" H 4350 1000 50  0001 C CNN
+	1    4350 1000
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:+12V #PWR069
+L power:+12V #PWR069
 U 1 1 59420708
-P 4700 1050
+P 4700 1000
 AR Path="/59420708" Ref="#PWR069"  Part="1" 
 AR Path="/592186CB/59420708" Ref="#PWR069"  Part="1" 
-F 0 "#PWR069" H 4700 900 50  0001 C CNN
-F 1 "+12V" H 4700 1190 50  0000 C CNN
-F 2 "" H 4700 1050 50  0001 C CNN
-F 3 "" H 4700 1050 50  0001 C CNN
-	1    4700 1050
+F 0 "#PWR069" H 4700 850 50  0001 C CNN
+F 1 "+12V" H 4700 1140 50  0000 C CNN
+F 2 "" H 4700 1000 50  0001 C CNN
+F 3 "" H 4700 1000 50  0001 C CNN
+	1    4700 1000
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:-12V #PWR90
+L power:-12V #PWR90
 U 1 1 5942089F
-P 9150 1050
+P 9150 1000
 AR Path="/5942089F" Ref="#PWR90"  Part="1" 
-AR Path="/592186CB/5942089F" Ref="#PWR90"  Part="1" 
-F 0 "#PWR90" H 9150 1150 50  0001 C CNN
-F 1 "-12V" H 9150 1200 50  0000 C CNN
-F 2 "" H 9150 1050 50  0001 C CNN
-F 3 "" H 9150 1050 50  0001 C CNN
-	1    9150 1050
+AR Path="/592186CB/5942089F" Ref="#PWR090"  Part="1" 
+F 0 "#PWR090" H 9150 1100 50  0001 C CNN
+F 1 "-12V" H 9150 1150 50  0000 C CNN
+F 2 "" H 9150 1000 50  0001 C CNN
+F 3 "" H 9150 1000 50  0001 C CNN
+	1    9150 1000
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:+12V #PWR070
+L power:+12V #PWR070
 U 1 1 59420946
-P 9500 1050
+P 9500 1000
 AR Path="/59420946" Ref="#PWR070"  Part="1" 
 AR Path="/592186CB/59420946" Ref="#PWR070"  Part="1" 
-F 0 "#PWR070" H 9500 900 50  0001 C CNN
-F 1 "+12V" H 9500 1190 50  0000 C CNN
-F 2 "" H 9500 1050 50  0001 C CNN
-F 3 "" H 9500 1050 50  0001 C CNN
-	1    9500 1050
+F 0 "#PWR070" H 9500 850 50  0001 C CNN
+F 1 "+12V" H 9500 1140 50  0000 C CNN
+F 2 "" H 9500 1000 50  0001 C CNN
+F 3 "" H 9500 1000 50  0001 C CNN
+	1    9500 1000
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:-12V #PWR73
+L power:-12V #PWR73
 U 1 1 59420B0D
-P 4350 4550
+P 4350 4500
 AR Path="/59420B0D" Ref="#PWR73"  Part="1" 
-AR Path="/592186CB/59420B0D" Ref="#PWR73"  Part="1" 
-F 0 "#PWR73" H 4350 4650 50  0001 C CNN
-F 1 "-12V" H 4350 4700 50  0000 C CNN
-F 2 "" H 4350 4550 50  0001 C CNN
-F 3 "" H 4350 4550 50  0001 C CNN
-	1    4350 4550
+AR Path="/592186CB/59420B0D" Ref="#PWR073"  Part="1" 
+F 0 "#PWR073" H 4350 4600 50  0001 C CNN
+F 1 "-12V" H 4350 4650 50  0000 C CNN
+F 2 "" H 4350 4500 50  0001 C CNN
+F 3 "" H 4350 4500 50  0001 C CNN
+	1    4350 4500
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:+12V #PWR071
+L power:+12V #PWR071
 U 1 1 59420BB4
-P 4700 4550
+P 4700 4500
 AR Path="/59420BB4" Ref="#PWR071"  Part="1" 
-AR Path="/592186CB/59420BB4" Ref="#PWR071"  Part="1" 
-F 0 "#PWR071" H 4700 4400 50  0001 C CNN
-F 1 "+12V" H 4700 4690 50  0000 C CNN
-F 2 "" H 4700 4550 50  0001 C CNN
-F 3 "" H 4700 4550 50  0001 C CNN
-	1    4700 4550
+AR Path="/592186CB/59420BB4" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H 4700 4350 50  0001 C CNN
+F 1 "+12V" H 4700 4640 50  0000 C CNN
+F 2 "" H 4700 4500 50  0001 C CNN
+F 3 "" H 4700 4500 50  0001 C CNN
+	1    4700 4500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1610,4 +1487,156 @@ Wire Wire Line
 	3300 7050 3300 7300
 Wire Wire Line
 	3300 7300 3500 7300
+$Comp
+L Amplifier_Operational:NJM4580 U5
+U 3 1 5C4F8870
+P 5150 1200
+F 0 "U5" H 5108 1246 50  0000 L CNN
+F 1 "NJM4580" H 5108 1155 50  0000 L CNN
+F 2 "" H 5150 1200 50  0001 C CNN
+F 3 "http://www.njr.com/semicon/PDF/NJM4580_E.pdf" H 5150 1200 50  0001 C CNN
+	3    5150 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 1500 5050 1550
+Wire Wire Line
+	5050 900  5050 850 
+$Comp
+L Amplifier_Operational:NJM4580 U6
+U 3 1 5C504241
+P 5150 4700
+F 0 "U6" H 5108 4746 50  0000 L CNN
+F 1 "NJM4580" H 5108 4655 50  0000 L CNN
+F 2 "" H 5150 4700 50  0001 C CNN
+F 3 "http://www.njr.com/semicon/PDF/NJM4580_E.pdf" H 5150 4700 50  0001 C CNN
+	3    5150 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 5050 5050 5000
+Wire Wire Line
+	5050 4400 5050 4350
+$Comp
+L power:-12V #PWR?
+U 1 1 5C5105B6
+P 9800 1600
+AR Path="/5C5105B6" Ref="#PWR?"  Part="1" 
+AR Path="/592186CB/5C5105B6" Ref="#PWR064"  Part="1" 
+F 0 "#PWR064" H 9800 1700 50  0001 C CNN
+F 1 "-12V" H 9800 1750 50  0000 C CNN
+F 2 "" H 9800 1600 50  0001 C CNN
+F 3 "" H 9800 1600 50  0001 C CNN
+	1    9800 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C5105BC
+P 9800 900
+AR Path="/5C5105BC" Ref="#PWR?"  Part="1" 
+AR Path="/592186CB/5C5105BC" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 9800 750 50  0001 C CNN
+F 1 "+12V" H 9800 1040 50  0000 C CNN
+F 2 "" H 9800 900 50  0001 C CNN
+F 3 "" H 9800 900 50  0001 C CNN
+	1    9800 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:NJM4580 U7
+U 3 1 5C5105C2
+P 9900 1250
+F 0 "U7" H 9858 1296 50  0000 L CNN
+F 1 "NJM4580" H 9858 1205 50  0000 L CNN
+F 2 "" H 9900 1250 50  0001 C CNN
+F 3 "http://www.njr.com/semicon/PDF/NJM4580_E.pdf" H 9900 1250 50  0001 C CNN
+	3    9900 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 1550 9800 1600
+Wire Wire Line
+	9800 950  9800 900 
+Wire Wire Line
+	4700 1350 4700 1400
+Wire Wire Line
+	4700 1000 4700 1050
+Wire Wire Line
+	4350 1000 4350 1050
+Wire Wire Line
+	4350 1400 4350 1350
+Wire Wire Line
+	4700 4500 4700 4550
+Wire Wire Line
+	4350 4500 4350 4550
+Wire Wire Line
+	4350 4850 4350 4900
+Wire Wire Line
+	4700 4900 4700 4850
+Wire Wire Line
+	9500 1000 9500 1050
+Wire Wire Line
+	9150 1000 9150 1050
+Wire Wire Line
+	9150 1350 9150 1400
+Wire Wire Line
+	9500 1350 9500 1400
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5FCBD38A
+P 1500 2500
+F 0 "JP?" V 1750 2450 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 1545 2568 50  0001 L CNN
+F 2 "" H 1500 2500 50  0001 C CNN
+F 3 "~" H 1500 2500 50  0001 C CNN
+	1    1500 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1500 2650 1500 2800
+Wire Wire Line
+	1300 2350 1500 2350
+Connection ~ 1500 2350
+Wire Wire Line
+	1500 2350 1850 2350
+Wire Wire Line
+	1500 2500 1500 2650
+Wire Wire Line
+	1300 2500 1500 2500
+Connection ~ 1500 2650
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5FCE4A7B
+P 1500 6000
+F 0 "JP?" V 1750 5950 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 1545 6068 50  0001 L CNN
+F 2 "" H 1500 6000 50  0001 C CNN
+F 3 "~" H 1500 6000 50  0001 C CNN
+	1    1500 6000
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1500 6150
+Wire Wire Line
+	1500 6150 1500 6300
+Connection ~ 1500 5850
+Wire Wire Line
+	1500 5850 1850 5850
+$Comp
+L Jumper:SolderJumper_2_Open JP?
+U 1 1 5FCE5FA4
+P 6300 2500
+F 0 "JP?" V 6550 2450 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 6345 2568 50  0001 L CNN
+F 2 "" H 6300 2500 50  0001 C CNN
+F 3 "~" H 6300 2500 50  0001 C CNN
+	1    6300 2500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6300 2650
+Wire Wire Line
+	6300 2650 6300 2800
+Connection ~ 6300 2350
+Wire Wire Line
+	6300 2350 6650 2350
 $EndSCHEMATC

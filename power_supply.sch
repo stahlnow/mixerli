@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:pocket_mixer-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 3 8
 Title ""
 Date ""
 Rev ""
@@ -14,741 +13,545 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 9850 1400 2    60   Output ~ 0
-12V
-Text HLabel 9800 2850 2    60   Output ~ 0
--12V
+Text Label 5000 3950 0    60   ~ 0
+Vbat
 $Comp
-L pocket_mixer-rescue:LT1930 U11
-U 1 1 595D131F
-P 7000 2050
-AR Path="/595D131F" Ref="U11"  Part="1" 
-AR Path="/5940313F/595D131F" Ref="U11"  Part="1" 
-F 0 "U11" H 7000 2450 50  0000 C CNN
-F 1 "LT1930" H 7000 2100 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-5_HandSoldering" H 7050 1400 50  0001 C CNN
-F 3 "http://www.linear.com/docs/1112" H 7050 1500 50  0001 C CNN
-	1    7000 2050
+L stahllabs:MCP73831 U10
+U 1 1 59638DE9
+P 4000 4350
+AR Path="/59638DE9" Ref="U10"  Part="1" 
+AR Path="/5940313F/59638DE9" Ref="U10"  Part="1" 
+F 0 "U10" H 4000 4550 60  0000 C CNN
+F 1 "MCP73831" H 4000 4150 60  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4000 4350 60  0001 C CNN
+F 3 "" H 4000 4350 60  0001 C CNN
+	1    4000 4350
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:LT1931 U12
-U 1 1 595D1391
-P 7000 3500
-AR Path="/595D1391" Ref="U12"  Part="1" 
-AR Path="/5940313F/595D1391" Ref="U12"  Part="1" 
-F 0 "U12" H 7000 3900 50  0000 C CNN
-F 1 "LT1931" H 7000 3550 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-5_HandSoldering" H 7050 2850 50  0001 C CNN
-F 3 "http://www.linear.com/docs/3921" H 7050 2950 50  0001 C CNN
-	1    7000 3500
+L Device:C C49
+U 1 1 59638F0E
+P 3100 4400
+AR Path="/59638F0E" Ref="C49"  Part="1" 
+AR Path="/5940313F/59638F0E" Ref="C49"  Part="1" 
+F 0 "C49" H 3125 4500 50  0000 L CNN
+F 1 "4.7uF" H 3125 4300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3138 4250 50  0001 C CNN
+F 3 "" H 3100 4400 50  0001 C CNN
+	1    3100 4400
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:C C51
-U 1 1 595D13BE
-P 6150 1800
-AR Path="/595D13BE" Ref="C51"  Part="1" 
-AR Path="/5940313F/595D13BE" Ref="C51"  Part="1" 
-F 0 "C51" H 6175 1900 50  0000 L CNN
-F 1 "4.7uF" H 6175 1700 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 6188 1650 50  0001 C CNN
-F 3 "" H 6150 1800 50  0001 C CNN
-	1    6150 1800
+L power:GND #PWR0106
+U 1 1 59638F4B
+P 3100 4600
+AR Path="/59638F4B" Ref="#PWR0106"  Part="1" 
+AR Path="/5940313F/59638F4B" Ref="#PWR0114"  Part="1" 
+F 0 "#PWR0114" H 3100 4350 50  0001 C CNN
+F 1 "GND" H 3100 4450 50  0000 C CNN
+F 2 "" H 3100 4600 50  0001 C CNN
+F 3 "" H 3100 4600 50  0001 C CNN
+	1    3100 4600
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:C C52
-U 1 1 595D13DD
-P 6150 3250
-AR Path="/595D13DD" Ref="C52"  Part="1" 
-AR Path="/5940313F/595D13DD" Ref="C52"  Part="1" 
-F 0 "C52" H 6175 3350 50  0000 L CNN
-F 1 "4.7uF" H 6175 3150 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 6188 3100 50  0001 C CNN
-F 3 "" H 6150 3250 50  0001 C CNN
-	1    6150 3250
+L Device:LED D1
+U 1 1 5963903E
+P 3500 4600
+AR Path="/5963903E" Ref="D1"  Part="1" 
+AR Path="/5940313F/5963903E" Ref="D1"  Part="1" 
+F 0 "D1" H 3500 4700 50  0000 C CNN
+F 1 "LED" H 3500 4500 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 3500 4600 50  0001 C CNN
+F 3 "" H 3500 4600 50  0001 C CNN
+	1    3500 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R65
+U 1 1 5963908B
+P 3500 4900
+AR Path="/5963908B" Ref="R65"  Part="1" 
+AR Path="/5940313F/5963908B" Ref="R65"  Part="1" 
+F 0 "R65" V 3580 4900 50  0000 C CNN
+F 1 "1k" V 3500 4900 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3430 4900 50  0001 C CNN
+F 3 "" H 3500 4900 50  0001 C CNN
+	1    3500 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 5050 3500 5150
+Wire Wire Line
+	3500 5150 3350 5150
+Wire Wire Line
+	3350 5150 3350 4250
+Wire Wire Line
+	3500 4450 3550 4450
+$Comp
+L power:GND #PWR0107
+U 1 1 59639252
+P 4550 4600
+AR Path="/59639252" Ref="#PWR0107"  Part="1" 
+AR Path="/5940313F/59639252" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 4550 4350 50  0001 C CNN
+F 1 "GND" H 4550 4450 50  0000 C CNN
+F 2 "" H 4550 4600 50  0001 C CNN
+F 3 "" H 4550 4600 50  0001 C CNN
+	1    4550 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4600 4550 4450
+Wire Wire Line
+	4550 4450 4450 4450
+$Comp
+L Device:R R66
+U 1 1 596392EA
+P 4750 4800
+AR Path="/596392EA" Ref="R66"  Part="1" 
+AR Path="/5940313F/596392EA" Ref="R66"  Part="1" 
+F 0 "R66" V 4830 4800 50  0000 C CNN
+F 1 "2k" V 4750 4800 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4680 4800 50  0001 C CNN
+F 3 "" H 4750 4800 50  0001 C CNN
+	1    4750 4800
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:L L1
-U 1 1 595D1438
-P 7000 1400
-AR Path="/595D1438" Ref="L1"  Part="1" 
-AR Path="/5940313F/595D1438" Ref="L1"  Part="1" 
-F 0 "L1" V 6950 1400 50  0000 C CNN
-F 1 "10uH" V 7075 1400 50  0000 C CNN
-F 2 "stahllabs:Inductor_CR43NP-100MC" H 7000 1400 50  0001 C CNN
-F 3 "" H 7000 1400 50  0001 C CNN
-	1    7000 1400
+L power:GND #PWR0108
+U 1 1 5963938E
+P 4750 5000
+AR Path="/5963938E" Ref="#PWR0108"  Part="1" 
+AR Path="/5940313F/5963938E" Ref="#PWR0116"  Part="1" 
+F 0 "#PWR0116" H 4750 4750 50  0001 C CNN
+F 1 "GND" H 4750 4850 50  0000 C CNN
+F 2 "" H 4750 5000 50  0001 C CNN
+F 3 "" H 4750 5000 50  0001 C CNN
+	1    4750 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 4650 4750 4350
+Wire Wire Line
+	4750 4350 4450 4350
+$Comp
+L Device:C C50
+U 1 1 5963942B
+P 5000 4450
+AR Path="/5963942B" Ref="C50"  Part="1" 
+AR Path="/5940313F/5963942B" Ref="C50"  Part="1" 
+F 0 "C50" H 5025 4550 50  0000 L CNN
+F 1 "4.7uF" H 5025 4350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5038 4300 50  0001 C CNN
+F 3 "" H 5000 4450 50  0001 C CNN
+	1    5000 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 59639871
+P 1350 5050
+AR Path="/59639871" Ref="#PWR0110"  Part="1" 
+AR Path="/5940313F/59639871" Ref="#PWR0117"  Part="1" 
+F 0 "#PWR0117" H 1350 4800 50  0001 C CNN
+F 1 "GND" H 1350 4900 50  0000 C CNN
+F 2 "" H 1350 5050 50  0001 C CNN
+F 3 "" H 1350 5050 50  0001 C CNN
+	1    1350 5050
+	1    0    0    -1  
+$EndComp
+Text Label 2300 3350 0    60   ~ 0
+5V
+$Comp
+L Connector_Generic:Conn_01x02 J9
+U 1 1 59639D53
+P 2750 5150
+AR Path="/59639D53" Ref="J9"  Part="1" 
+AR Path="/5940313F/59639D53" Ref="J9"  Part="1" 
+F 0 "J9" H 2750 5300 50  0000 C CNN
+F 1 "5V" V 2850 5150 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2750 5150 50  0001 C CNN
+F 3 "" H 2750 5150 50  0001 C CNN
+	1    2750 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2750 4950 2750 4250
+Connection ~ 2750 3350
+Wire Wire Line
+	2650 4950 2650 4900
+Wire Wire Line
+	2650 4900 1350 4900
+Connection ~ 1350 4900
+$Comp
+L power:GND #PWR0111
+U 1 1 5963A1FC
+P 5300 4950
+AR Path="/5963A1FC" Ref="#PWR0111"  Part="1" 
+AR Path="/5940313F/5963A1FC" Ref="#PWR0118"  Part="1" 
+F 0 "#PWR0118" H 5300 4700 50  0001 C CNN
+F 1 "GND" H 5300 4800 50  0000 C CNN
+F 2 "" H 5300 4950 50  0001 C CNN
+F 3 "" H 5300 4950 50  0001 C CNN
+	1    5300 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 4100 5300 4500
+Wire Wire Line
+	5300 4100 5500 4100
+Wire Wire Line
+	5500 4550 5500 4500
+Wire Wire Line
+	5500 4500 5300 4500
+Connection ~ 5300 4500
+Wire Wire Line
+	5600 4550 5600 4500
+Wire Wire Line
+	5600 4500 5800 4500
+Wire Wire Line
+	5800 4500 5800 4100
+Wire Wire Line
+	3350 4250 3550 4250
+Wire Wire Line
+	1350 4900 1350 5050
+Wire Wire Line
+	5300 4500 5300 4950
+Wire Wire Line
+	5000 4600 5000 4650
+$Comp
+L power:GND #PWR?
+U 1 1 5C3CEE11
+P 5000 4650
+AR Path="/5C3CEE11" Ref="#PWR?"  Part="1" 
+AR Path="/5940313F/5C3CEE11" Ref="#PWR0119"  Part="1" 
+F 0 "#PWR0119" H 5000 4400 50  0001 C CNN
+F 1 "GND" H 5000 4500 50  0000 C CNN
+F 2 "" H 5000 4650 50  0001 C CNN
+F 3 "" H 5000 4650 50  0001 C CNN
+	1    5000 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 4550 3100 4600
+Wire Wire Line
+	4750 4950 4750 5000
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5C87928D
+P 5600 4300
+AR Path="/5C87928D" Ref="J?"  Part="1" 
+AR Path="/5940313F/5C87928D" Ref="J10"  Part="1" 
+F 0 "J10" H 5600 4450 50  0000 C CNN
+F 1 "CONN_01X02" V 5700 4300 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5600 4300 50  0001 C CNN
+F 3 "" H 5600 4300 50  0001 C CNN
+	1    5600 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5C879343
+P 5600 4750
+AR Path="/5C879343" Ref="J?"  Part="1" 
+AR Path="/5940313F/5C879343" Ref="J11"  Part="1" 
+F 0 "J11" H 5600 4900 50  0000 C CNN
+F 1 "CONN_01X02" V 5700 4750 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5600 4750 50  0001 C CNN
+F 3 "" H 5600 4750 50  0001 C CNN
+	1    5600 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10450 3800 10450 3650
+Wire Wire Line
+	10450 3450 10700 3450
+Wire Wire Line
+	10450 3300 10450 3450
+$Comp
+L Switch:SW_SPDT SW1
+U 1 1 59676EDC
+P 7700 3450
+AR Path="/59676EDC" Ref="SW1"  Part="1" 
+AR Path="/5940313F/59676EDC" Ref="SW1"  Part="1" 
+F 0 "SW1" H 7700 3620 50  0000 C CNN
+F 1 "SW_SPDT" H 7700 3250 50  0000 C CNN
+F 2 "stahllabs:Switches_Alps_SSSS916400" H 7700 3450 50  0001 C CNN
+F 3 "https://www.alps.com/prod/info/E/HTML/Switch/Slide/SSSS9/SSSS916400.html" H 7700 3450 50  0001 C CNN
+	1    7700 3450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5963B4DE
+P 8350 4550
+AR Path="/5963B4DE" Ref="D4"  Part="1" 
+AR Path="/5940313F/5963B4DE" Ref="D3"  Part="1" 
+F 0 "D3" H 8350 4650 50  0000 C CNN
+F 1 "PWR-LED" H 8350 4400 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 8350 4550 50  0001 C CNN
+F 3 "" H 8350 4550 50  0001 C CNN
+	1    8350 4550
 	0    -1   -1   0   
 $EndComp
 $Comp
-L pocket_mixer-rescue:D_Schottky D2
-U 1 1 595D153E
-P 7700 1400
-AR Path="/595D153E" Ref="D2"  Part="1" 
-AR Path="/5940313F/595D153E" Ref="D2"  Part="1" 
-F 0 "D2" H 7700 1500 50  0000 C CNN
-F 1 "D_Schottky" H 7700 1300 50  0001 C CNN
-F 2 "Diodes_SMD:D_SOD-123" H 7700 1400 50  0001 C CNN
-F 3 "" H 7700 1400 50  0001 C CNN
-F 4 "MBR0520LT1G" H 7700 1400 60  0001 C CNN "MFN"
-	1    7700 1400
+L Device:R R71
+U 1 1 5963B25F
+P 8350 4200
+AR Path="/5963B25F" Ref="R71"  Part="1" 
+AR Path="/5940313F/5963B25F" Ref="R71"  Part="1" 
+F 0 "R71" V 8430 4200 50  0000 C CNN
+F 1 "10k" V 8350 4200 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 8280 4200 50  0001 C CNN
+F 3 "" H 8350 4200 50  0001 C CNN
+	1    8350 4200
+	1    0    0    -1  
+$EndComp
+Text HLabel 10700 3650 2    60   Output ~ 0
+-12V
+Text HLabel 10700 3450 2    60   Output ~ 0
+12V
+Wire Wire Line
+	8350 4350 8350 4400
+$Comp
+L Device:D_Schottky D2
+U 1 1 5C885A81
+P 6600 3350
+F 0 "D2" H 6600 3134 50  0000 C CNN
+F 1 "BAT20JFILM" H 6600 3225 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 6600 3350 50  0001 C CNN
+F 3 "~" H 6600 3350 50  0001 C CNN
+	1    6600 3350
 	-1   0    0    1   
 $EndComp
 $Comp
-L pocket_mixer-rescue:D_Schottky D3
-U 1 1 595D159D
-P 8450 3500
-AR Path="/595D159D" Ref="D3"  Part="1" 
-AR Path="/5940313F/595D159D" Ref="D3"  Part="1" 
-F 0 "D3" H 8450 3600 50  0000 C CNN
-F 1 "D_Schottky" H 8450 3400 50  0001 C CNN
-F 2 "Diodes_SMD:D_SOD-123" H 8450 3500 50  0001 C CNN
-F 3 "" H 8450 3500 50  0001 C CNN
-F 4 "MBR0520LT1G" H 8450 3500 60  0001 C CNN "MFN"
-	1    8450 3500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L pocket_mixer-rescue:C C56
-U 1 1 595D161C
-P 7700 2850
-AR Path="/595D161C" Ref="C56"  Part="1" 
-AR Path="/5940313F/595D161C" Ref="C56"  Part="1" 
-F 0 "C56" H 7725 2950 50  0000 L CNN
-F 1 "1uF" H 7725 2750 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 7738 2700 50  0001 C CNN
-F 3 "" H 7700 2850 50  0001 C CNN
-	1    7700 2850
-	0    1    1    0   
-$EndComp
-$Comp
-L pocket_mixer-rescue:GND #PWR0104
-U 1 1 595D1671
-P 6150 2500
-AR Path="/595D1671" Ref="#PWR0104"  Part="1" 
-AR Path="/5940313F/595D1671" Ref="#PWR0104"  Part="1" 
-F 0 "#PWR0104" H 6150 2250 50  0001 C CNN
-F 1 "GND" H 6150 2350 50  0000 C CNN
-F 2 "" H 6150 2500 50  0001 C CNN
-F 3 "" H 6150 2500 50  0001 C CNN
-	1    6150 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L pocket_mixer-rescue:GND #PWR0105
-U 1 1 595D1697
-P 6150 3950
-AR Path="/595D1697" Ref="#PWR0105"  Part="1" 
-AR Path="/5940313F/595D1697" Ref="#PWR0105"  Part="1" 
-F 0 "#PWR0105" H 6150 3700 50  0001 C CNN
-F 1 "GND" H 6150 3800 50  0000 C CNN
-F 2 "" H 6150 3950 50  0001 C CNN
-F 3 "" H 6150 3950 50  0001 C CNN
-	1    6150 3950
+L stahllabs:ZXMP6A13FTA Q1
+U 1 1 5C88B068
+P 7150 3700
+F 0 "Q1" H 7100 3850 60  0000 L CNN
+F 1 "ZXMP6A13FTA" H 7100 3550 60  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7100 3750 60  0001 C CNN
+F 3 "" H 7100 3750 60  0001 C CNN
+	1    7150 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6150 3900 7000 3900
+	2750 3350 6350 3350
 Wire Wire Line
-	6150 3900 6150 3400
+	7050 3350 7050 3500
+Connection ~ 7050 3350
 Wire Wire Line
-	6150 3100 6150 2850
+	7050 3350 7500 3350
 Wire Wire Line
-	5850 2850 6150 2850
+	7050 3900 7050 3950
 Wire Wire Line
-	6800 2850 6800 3050
-Connection ~ 6800 2850
+	7050 3950 5800 3950
+Connection ~ 5800 3950
 Wire Wire Line
-	7150 2850 7250 2850
+	6750 3350 7050 3350
 Wire Wire Line
-	7250 3050 7250 2850
-Connection ~ 7250 2850
+	6350 3350 6350 3700
 Wire Wire Line
-	7850 2850 8450 2850
+	6350 3700 6850 3700
+Connection ~ 6350 3350
 Wire Wire Line
-	8450 2850 8450 3350
-Wire Wire Line
-	6150 2450 7000 2450
-Wire Wire Line
-	6150 2450 6150 1950
-Wire Wire Line
-	6150 1400 6150 1650
-Wire Wire Line
-	4500 1500 5100 1500
-Wire Wire Line
-	5700 1400 5850 1400
-Wire Wire Line
-	6800 1600 6800 1400
-Connection ~ 6800 1400
-Wire Wire Line
-	7150 1400 7250 1400
-Wire Wire Line
-	7250 1600 7250 1400
-Connection ~ 7250 1400
+	6350 3350 6450 3350
 $Comp
-L pocket_mixer-rescue:R R67
-U 1 1 595D17D9
-P 8050 1750
-AR Path="/595D17D9" Ref="R67"  Part="1" 
-AR Path="/5940313F/595D17D9" Ref="R67"  Part="1" 
-F 0 "R67" V 8130 1750 50  0000 C CNN
-F 1 "113k" V 8050 1750 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 7980 1750 50  0001 C CNN
-F 3 "" H 8050 1750 50  0001 C CNN
-	1    8050 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L pocket_mixer-rescue:R R68
-U 1 1 595D181E
-P 8050 2250
-AR Path="/595D181E" Ref="R68"  Part="1" 
-AR Path="/5940313F/595D181E" Ref="R68"  Part="1" 
-F 0 "R68" V 8130 2250 50  0000 C CNN
-F 1 "13k3" V 8050 2250 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 7980 2250 50  0001 C CNN
-F 3 "" H 8050 2250 50  0001 C CNN
-	1    8050 2250
+L Device:R R67
+U 1 1 5C89791E
+P 6350 4250
+F 0 "R67" H 6420 4296 50  0000 L CNN
+F 1 "100k" H 6420 4205 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 6280 4250 50  0001 C CNN
+F 3 "~" H 6350 4250 50  0001 C CNN
+	1    6350 4250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8050 2450 8050 2400
-Connection ~ 7000 2450
-Wire Wire Line
-	7600 2050 8050 2050
-Wire Wire Line
-	8050 1900 8050 2050
-Connection ~ 8050 2050
-Wire Wire Line
-	8050 1600 8050 1400
-Wire Wire Line
-	7850 1400 8050 1400
+	6350 3700 6350 4100
+Connection ~ 6350 3700
 $Comp
-L pocket_mixer-rescue:C C53
-U 1 1 595D18E7
-P 8400 1750
-AR Path="/595D18E7" Ref="C53"  Part="1" 
-AR Path="/5940313F/595D18E7" Ref="C53"  Part="1" 
-F 0 "C53" H 8425 1850 50  0000 L CNN
-F 1 "10pF" H 8425 1650 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 8438 1600 50  0001 C CNN
-F 3 "" H 8400 1750 50  0001 C CNN
-	1    8400 1750
+L pocket_mixer-rescue:GND #PWR0120
+U 1 1 5C8982FE
+P 6350 4450
+F 0 "#PWR0120" H 6350 4200 50  0001 C CNN
+F 1 "GND" H 6355 4277 50  0000 C CNN
+F 2 "" H 6350 4450 50  0001 C CNN
+F 3 "" H 6350 4450 50  0001 C CNN
+	1    6350 4450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8400 2050 8400 1900
+	6350 4400 6350 4450
 Wire Wire Line
-	8400 1400 8400 1600
-Connection ~ 8050 1400
+	7900 3450 8350 3450
+Wire Wire Line
+	8350 3450 8350 4050
+Wire Wire Line
+	8350 4700 8350 4900
 $Comp
-L pocket_mixer-rescue:C C54
-U 1 1 595D1982
-P 8850 2050
-AR Path="/595D1982" Ref="C54"  Part="1" 
-AR Path="/5940313F/595D1982" Ref="C54"  Part="1" 
-F 0 "C54" H 8875 2150 50  0000 L CNN
-F 1 "4.7uF" H 8875 1950 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 8888 1900 50  0001 C CNN
-F 3 "" H 8850 2050 50  0001 C CNN
-	1    8850 2050
+L power:GND #PWR0121
+U 1 1 5C89A2B0
+P 8350 4900
+F 0 "#PWR0121" H 8350 4650 50  0001 C CNN
+F 1 "GND" H 8355 4727 50  0000 C CNN
+F 2 "" H 8350 4900 50  0001 C CNN
+F 3 "" H 8350 4900 50  0001 C CNN
+	1    8350 4900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8850 2450 8850 2200
-Connection ~ 8050 2450
-Wire Wire Line
-	8850 1400 8850 1900
-Connection ~ 8400 1400
+Text Notes 6700 2950 0    60   ~ 0
+Autoswitching Power
+Text Notes 3600 4000 0    60   ~ 0
+LiPo charger circuit
+Connection ~ 10450 3450
+Connection ~ 8350 3450
 $Comp
-L pocket_mixer-rescue:R R69
-U 1 1 595D1A45
-P 8050 3250
-AR Path="/595D1A45" Ref="R69"  Part="1" 
-AR Path="/5940313F/595D1A45" Ref="R69"  Part="1" 
-F 0 "R69" V 8130 3250 50  0000 C CNN
-F 1 "84k5" V 8050 3250 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 7980 3250 50  0001 C CNN
-F 3 "" H 8050 3250 50  0001 C CNN
-	1    8050 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L pocket_mixer-rescue:R R70
-U 1 1 595D1A7E
-P 8050 3700
-AR Path="/595D1A7E" Ref="R70"  Part="1" 
-AR Path="/5940313F/595D1A7E" Ref="R70"  Part="1" 
-F 0 "R70" V 8130 3700 50  0000 C CNN
-F 1 "10k" V 8050 3700 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 7980 3700 50  0001 C CNN
-F 3 "" H 8050 3700 50  0001 C CNN
-	1    8050 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8050 3900 8050 3850
-Connection ~ 7000 3900
-Wire Wire Line
-	7600 3500 8050 3500
-Wire Wire Line
-	8050 3400 8050 3500
-Connection ~ 8050 3500
-Wire Wire Line
-	8450 3900 8450 3650
-Connection ~ 8050 3900
-$Comp
-L pocket_mixer-rescue:C C55
-U 1 1 595D1BEF
-P 9000 3500
-AR Path="/595D1BEF" Ref="C55"  Part="1" 
-AR Path="/5940313F/595D1BEF" Ref="C55"  Part="1" 
-F 0 "C55" H 9025 3600 50  0000 L CNN
-F 1 "10uF" H 9025 3400 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 9038 3350 50  0001 C CNN
-F 3 "" H 9000 3500 50  0001 C CNN
-	1    9000 3500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9000 3900 9000 3650
-Connection ~ 8450 3900
-Connection ~ 8850 1400
-Connection ~ 8450 2850
-Wire Wire Line
-	9000 2850 9000 3050
-Wire Wire Line
-	9000 3050 8050 3050
-Wire Wire Line
-	8050 3050 8050 3100
-Connection ~ 9000 2850
-Connection ~ 9000 3050
-Wire Wire Line
-	8900 2850 9000 2850
-$Comp
-L pocket_mixer-rescue:CLS62NP-100NC L2
-U 1 1 595D8306
-P 7000 2850
-AR Path="/595D8306" Ref="L2"  Part="1" 
-AR Path="/5940313F/595D8306" Ref="L2"  Part="1" 
-F 0 "L2" V 7090 2870 60  0000 C CNN
-F 1 "10uH" V 6920 2810 60  0000 C CNN
-F 2 "stahllabs:CLS62NP-100NC" H 7000 2850 60  0001 C CNN
-F 3 "" H 7000 2850 60  0001 C CNN
-	1    7000 2850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L pocket_mixer-rescue:CLS62NP-100NC L2
-U 2 1 595D8398
-P 8750 2850
-AR Path="/595D8398" Ref="L2"  Part="2" 
-AR Path="/5940313F/595D8398" Ref="L2"  Part="2" 
-F 0 "L2" V 8840 2870 60  0000 C CNN
-F 1 "10uH" V 8670 2810 60  0000 C CNN
-F 2 "stahllabs:CLS62NP-100NC" H 8750 2850 60  0001 C CNN
-F 3 "" H 8750 2850 60  0001 C CNN
-	2    8750 2850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6450 3500 6400 3500
-Wire Wire Line
-	6400 3500 6400 2850
-Connection ~ 6400 2850
-Wire Wire Line
-	6450 2050 6400 2050
-Wire Wire Line
-	6400 2050 6400 1400
-Connection ~ 6400 1400
-Wire Wire Line
-	5850 1400 5850 2850
-Connection ~ 6150 1400
-Connection ~ 6150 2850
-Text Label 4550 1400 0    60   ~ 0
-Vbat
-$Comp
-L pocket_mixer-rescue:MCP73831 U10
-U 1 1 59638DE9
-P 3500 1900
-AR Path="/59638DE9" Ref="U10"  Part="1" 
-AR Path="/5940313F/59638DE9" Ref="U10"  Part="1" 
-F 0 "U10" H 3500 2100 60  0000 C CNN
-F 1 "MCP73831" H 3500 1700 60  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-5_HandSoldering" H 3500 1900 60  0001 C CNN
-F 3 "" H 3500 1900 60  0001 C CNN
-	1    3500 1900
+L pocket_mixer-rescue:GND #PWR0122
+U 1 1 5C8A36EC
+P 8950 3900
+F 0 "#PWR0122" H 8950 3650 50  0001 C CNN
+F 1 "GND" H 8955 3727 50  0000 C CNN
+F 2 "" H 8950 3900 50  0001 C CNN
+F 3 "" H 8950 3900 50  0001 C CNN
+	1    8950 3900
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:C C49
-U 1 1 59638F0E
-P 2600 1950
-AR Path="/59638F0E" Ref="C49"  Part="1" 
-AR Path="/5940313F/59638F0E" Ref="C49"  Part="1" 
-F 0 "C49" H 2625 2050 50  0000 L CNN
-F 1 "4.7uF" H 2625 1850 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 2638 1800 50  0001 C CNN
-F 3 "" H 2600 1950 50  0001 C CNN
-	1    2600 1950
+L power:PWR_FLAG #FLG03
+U 1 1 5C51DB61
+P 10450 3800
+F 0 "#FLG03" H 10450 3875 50  0001 C CNN
+F 1 "PWR_FLAG" H 10450 3973 50  0000 C CNN
+F 2 "" H 10450 3800 50  0001 C CNN
+F 3 "~" H 10450 3800 50  0001 C CNN
+	1    10450 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5C51AF21
+P 10450 3300
+F 0 "#FLG02" H 10450 3375 50  0001 C CNN
+F 1 "PWR_FLAG" H 10450 3474 50  0000 C CNN
+F 2 "" H 10450 3300 50  0001 C CNN
+F 3 "~" H 10450 3300 50  0001 C CNN
+	1    10450 3300
 	1    0    0    -1  
 $EndComp
 $Comp
-L pocket_mixer-rescue:GND #PWR0106
-U 1 1 59638F4B
-P 2600 2100
-AR Path="/59638F4B" Ref="#PWR0106"  Part="1" 
-AR Path="/5940313F/59638F4B" Ref="#PWR0106"  Part="1" 
-F 0 "#PWR0106" H 2600 1850 50  0001 C CNN
-F 1 "GND" H 2600 1950 50  0000 C CNN
-F 2 "" H 2600 2100 50  0001 C CNN
-F 3 "" H 2600 2100 50  0001 C CNN
-	1    2600 2100
+L power:PWR_FLAG #FLG01
+U 1 1 5C8AE8A1
+P 9300 3900
+F 0 "#FLG01" H 9300 3975 50  0001 C CNN
+F 1 "PWR_FLAG" H 9300 4074 50  0000 C CNN
+F 2 "" H 9300 3900 50  0001 C CNN
+F 3 "~" H 9300 3900 50  0001 C CNN
+	1    9300 3900
+	-1   0    0    1   
+$EndComp
+NoConn ~ 7500 3550
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5C8D8700
+P 2750 3250
+F 0 "#FLG0101" H 2750 3325 50  0001 C CNN
+F 1 "PWR_FLAG" H 2750 3424 50  0000 C CNN
+F 2 "" H 2750 3250 50  0001 C CNN
+F 3 "~" H 2750 3250 50  0001 C CNN
+	1    2750 3250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1950 1800 2250 1800
-Connection ~ 2600 1800
+	2750 3250 2750 3350
+Wire Wire Line
+	1350 4850 1350 4900
+NoConn ~ 1950 3550
+NoConn ~ 1950 3650
+NoConn ~ 1050 4850
+Wire Wire Line
+	1950 3350 2750 3350
+Connection ~ 3350 4250
+Wire Wire Line
+	3100 4250 3350 4250
+Wire Wire Line
+	3100 4250 2750 4250
+Connection ~ 3100 4250
+Connection ~ 2750 4250
+Wire Wire Line
+	2750 4250 2750 3350
 $Comp
-L pocket_mixer-rescue:LED D1
-U 1 1 5963903E
-P 3000 2150
-AR Path="/5963903E" Ref="D1"  Part="1" 
-AR Path="/5940313F/5963903E" Ref="D1"  Part="1" 
-F 0 "D1" H 3000 2250 50  0000 C CNN
-F 1 "LED" H 3000 2050 50  0000 C CNN
-F 2 "LEDs:LED_D3.0mm" H 3000 2150 50  0001 C CNN
-F 3 "" H 3000 2150 50  0001 C CNN
-	1    3000 2150
-	0    1    1    0   
-$EndComp
-$Comp
-L pocket_mixer-rescue:R R65
-U 1 1 5963908B
-P 3000 2450
-AR Path="/5963908B" Ref="R65"  Part="1" 
-AR Path="/5940313F/5963908B" Ref="R65"  Part="1" 
-F 0 "R65" V 3080 2450 50  0000 C CNN
-F 1 "330" V 3000 2450 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 2930 2450 50  0001 C CNN
-F 3 "" H 3000 2450 50  0001 C CNN
-	1    3000 2450
+L stahllabs:USB_C_Receptacle_Power_Only J8
+U 1 1 5FCCDBBD
+P 1350 3950
+AR Path="/5FCCDBBD" Ref="J8"  Part="1" 
+AR Path="/5940313F/5FCCDBBD" Ref="J8"  Part="1" 
+F 0 "J8" H 1457 4817 50  0000 C CNN
+F 1 "USB_C_Receptacle_Power_Only" H 1457 4726 50  0000 C CNN
+F 2 "stahllabs:USB_C_Receptacle_CUI_Devices_UJC-HP-3-SMT-TR" H 1350 4900 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1500 3950 50  0001 C CNN
+	1    1350 3950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 2600 3000 2700
+	5000 3950 5800 3950
 Wire Wire Line
-	3000 2700 2850 2700
+	5600 4100 5800 4100
+Connection ~ 5800 4100
 Wire Wire Line
-	2850 2700 2850 1800
-Connection ~ 2850 1800
+	5800 4100 5800 3950
+Text Notes 2150 5200 0    60   ~ 0
+Testpoint
+Text Notes 9550 3200 2    60   ~ 0
+DC DC Step-up Boost\nConverter module
 Wire Wire Line
-	3000 2000 3050 2000
+	8650 3800 8950 3800
+Wire Wire Line
+	8950 3800 8950 3900
+Wire Wire Line
+	9500 3550 9600 3550
+Wire Wire Line
+	9600 3550 9600 3800
+Wire Wire Line
+	9600 3800 9300 3800
+Connection ~ 8950 3800
+Wire Wire Line
+	9300 3900 9300 3800
+Connection ~ 9300 3800
+Wire Wire Line
+	9300 3800 8950 3800
+Wire Wire Line
+	9500 3650 10450 3650
+Wire Wire Line
+	8650 3650 8650 3800
+Wire Wire Line
+	5000 4250 5000 4300
+Wire Wire Line
+	5000 4250 5000 3950
+Connection ~ 5000 4250
+Wire Wire Line
+	5000 4250 4450 4250
+Wire Wire Line
+	8650 3650 8700 3650
+Wire Wire Line
+	8700 3450 8350 3450
+Wire Wire Line
+	9500 3450 10450 3450
+Wire Wire Line
+	10450 3650 10700 3650
+Connection ~ 10450 3650
 $Comp
-L pocket_mixer-rescue:GND #PWR0107
-U 1 1 59639252
-P 4050 2150
-AR Path="/59639252" Ref="#PWR0107"  Part="1" 
-AR Path="/5940313F/59639252" Ref="#PWR0107"  Part="1" 
-F 0 "#PWR0107" H 4050 1900 50  0001 C CNN
-F 1 "GND" H 4050 2000 50  0000 C CNN
-F 2 "" H 4050 2150 50  0001 C CNN
-F 3 "" H 4050 2150 50  0001 C CNN
-	1    4050 2150
+L stahllabs:DC-DC-Boost-Converter-Positive-Negative-Dual-Output-Power-Supply U11
+U 1 1 6194BF25
+P 9100 3550
+F 0 "U11" H 9100 3791 60  0000 C CNN
+F 1 "DC-DC-Boost-Converter-Positive-Negative-Dual-Output-Power-Supply" H 9100 3791 60  0001 C CNN
+F 2 "stahllabs:DC-DC-Boost-Converter-Positive-Negative-Dual-Output-Power-Supply" H 8750 3800 60  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32789671683.html?spm=a2g0s.9042311.0.0.27424c4d2Mwcoo" H 8750 3800 60  0001 C CNN
+	1    9100 3550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4050 2150 4050 2000
-Wire Wire Line
-	4050 2000 3950 2000
-$Comp
-L pocket_mixer-rescue:R R66
-U 1 1 596392EA
-P 4250 2350
-AR Path="/596392EA" Ref="R66"  Part="1" 
-AR Path="/5940313F/596392EA" Ref="R66"  Part="1" 
-F 0 "R66" V 4330 2350 50  0000 C CNN
-F 1 "2k" V 4250 2350 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 4180 2350 50  0001 C CNN
-F 3 "" H 4250 2350 50  0001 C CNN
-	1    4250 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L pocket_mixer-rescue:GND #PWR0108
-U 1 1 5963938E
-P 4250 2500
-AR Path="/5963938E" Ref="#PWR0108"  Part="1" 
-AR Path="/5940313F/5963938E" Ref="#PWR0108"  Part="1" 
-F 0 "#PWR0108" H 4250 2250 50  0001 C CNN
-F 1 "GND" H 4250 2350 50  0000 C CNN
-F 2 "" H 4250 2500 50  0001 C CNN
-F 3 "" H 4250 2500 50  0001 C CNN
-	1    4250 2500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 2200 4250 1900
-Wire Wire Line
-	4250 1900 3950 1900
-$Comp
-L pocket_mixer-rescue:C C50
-U 1 1 5963942B
-P 4500 2000
-AR Path="/5963942B" Ref="C50"  Part="1" 
-AR Path="/5940313F/5963942B" Ref="C50"  Part="1" 
-F 0 "C50" H 4525 2100 50  0000 L CNN
-F 1 "4.7uF" H 4525 1900 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 4538 1850 50  0001 C CNN
-F 3 "" H 4500 2000 50  0001 C CNN
-	1    4500 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 1800 3950 1800
-$Comp
-L pocket_mixer-rescue:GND #PWR0110
-U 1 1 59639871
-P 1650 2500
-AR Path="/59639871" Ref="#PWR0110"  Part="1" 
-AR Path="/5940313F/59639871" Ref="#PWR0110"  Part="1" 
-F 0 "#PWR0110" H 1650 2250 50  0001 C CNN
-F 1 "GND" H 1650 2350 50  0000 C CNN
-F 2 "" H 1650 2500 50  0001 C CNN
-F 3 "" H 1650 2500 50  0001 C CNN
-	1    1650 2500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1650 2400 1650 2450
-Text Label 2100 1800 0    60   ~ 0
-5V
-$Comp
-L pocket_mixer-rescue:CONN_01X02 J9
-U 1 1 59639D53
-P 2200 2700
-AR Path="/59639D53" Ref="J9"  Part="1" 
-AR Path="/5940313F/59639D53" Ref="J9"  Part="1" 
-F 0 "J9" H 2200 2850 50  0000 C CNN
-F 1 "CONN_01X02" V 2300 2700 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 2200 2700 50  0001 C CNN
-F 3 "" H 2200 2700 50  0001 C CNN
-	1    2200 2700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2250 2500 2250 1800
-Connection ~ 2250 1800
-Wire Wire Line
-	2150 2500 2150 2450
-Wire Wire Line
-	2150 2450 1650 2450
-Connection ~ 1650 2450
-$Comp
-L pocket_mixer-rescue:CONN_01X02 J10
-U 1 1 5963A031
-P 5050 1750
-AR Path="/5963A031" Ref="J10"  Part="1" 
-AR Path="/5940313F/5963A031" Ref="J10"  Part="1" 
-F 0 "J10" H 5050 1900 50  0000 C CNN
-F 1 "CONN_01X02" V 5150 1750 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5050 1750 50  0001 C CNN
-F 3 "" H 5050 1750 50  0001 C CNN
-	1    5050 1750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5100 1500 5100 1550
-Connection ~ 5100 1500
-$Comp
-L pocket_mixer-rescue:GND #PWR0111
-U 1 1 5963A1FC
-P 4800 2500
-AR Path="/5963A1FC" Ref="#PWR0111"  Part="1" 
-AR Path="/5940313F/5963A1FC" Ref="#PWR0111"  Part="1" 
-F 0 "#PWR0111" H 4800 2250 50  0001 C CNN
-F 1 "GND" H 4800 2350 50  0000 C CNN
-F 2 "" H 4800 2500 50  0001 C CNN
-F 3 "" H 4800 2500 50  0001 C CNN
-	1    4800 2500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4800 1550 4800 1950
-Wire Wire Line
-	4800 1550 5000 1550
-$Comp
-L pocket_mixer-rescue:CONN_01X02 J11
-U 1 1 59637EBD
-P 5050 2200
-AR Path="/59637EBD" Ref="J11"  Part="1" 
-AR Path="/5940313F/59637EBD" Ref="J11"  Part="1" 
-F 0 "J11" H 5050 2350 50  0000 C CNN
-F 1 "CONN_01X02" V 5150 2200 50  0000 C CNN
-F 2 "stahllabs:JST_PH_S2B-PH-SM4-TB_02x2.00mm_Angled" H 5050 2200 50  0001 C CNN
-F 3 "" H 5050 2200 50  0001 C CNN
-	1    5050 2200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5000 2000 5000 1950
-Wire Wire Line
-	5000 1950 4800 1950
-Connection ~ 4800 1950
-Wire Wire Line
-	5100 2000 5100 1950
-Wire Wire Line
-	5100 1950 5300 1950
-$Comp
-L pocket_mixer-rescue:R R71
-U 1 1 5963B25F
-P 9500 1750
-AR Path="/5963B25F" Ref="R71"  Part="1" 
-AR Path="/5940313F/5963B25F" Ref="R71"  Part="1" 
-F 0 "R71" V 9580 1750 50  0000 C CNN
-F 1 "10k" V 9500 1750 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206" V 9430 1750 50  0001 C CNN
-F 3 "" H 9500 1750 50  0001 C CNN
-	1    9500 1750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9500 1600 9500 1400
-Connection ~ 9500 1400
-$Comp
-L pocket_mixer-rescue:LED D4
-U 1 1 5963B4DE
-P 9500 2050
-AR Path="/5963B4DE" Ref="D4"  Part="1" 
-AR Path="/5940313F/5963B4DE" Ref="D4"  Part="1" 
-F 0 "D4" H 9500 2150 50  0000 C CNN
-F 1 "PWR-LED" H 9500 1900 50  0000 C CNN
-F 2 "LEDs:LED_D3.0mm" H 9500 2050 50  0001 C CNN
-F 3 "" H 9500 2050 50  0001 C CNN
-	1    9500 2050
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9500 2450 9500 2200
-Connection ~ 8850 2450
-$Comp
-L pocket_mixer-rescue:USB_OTG J8
-U 1 1 596397D2
-P 1650 2000
-AR Path="/596397D2" Ref="J8"  Part="1" 
-AR Path="/5940313F/596397D2" Ref="J8"  Part="1" 
-F 0 "J8" H 1450 2450 50  0000 L CNN
-F 1 "USB_OTG" H 1450 2350 50  0000 L CNN
-F 2 "stahllabs:USB_Micro-B" H 1800 1950 50  0001 C CNN
-F 3 "" H 1800 1950 50  0001 C CNN
-	1    1650 2000
-	1    0    0    -1  
-$EndComp
-Connection ~ 5850 1400
-Wire Wire Line
-	5300 1950 5300 1500
-$Comp
-L pocket_mixer-rescue:SW_SPDT SW1
-U 1 1 59676EDC
-P 5500 1400
-AR Path="/59676EDC" Ref="SW1"  Part="1" 
-AR Path="/5940313F/59676EDC" Ref="SW1"  Part="1" 
-F 0 "SW1" H 5500 1570 50  0000 C CNN
-F 1 "SW_SPDT" H 5500 1200 50  0000 C CNN
-F 2 "stahllabs:Switches_Alps_SSSS916400" H 5500 1400 50  0001 C CNN
-F 3 "" H 5500 1400 50  0001 C CNN
-	1    5500 1400
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	6800 2850 6850 2850
-Wire Wire Line
-	7250 2850 7550 2850
-Wire Wire Line
-	6800 1400 6850 1400
-Wire Wire Line
-	7250 1400 7550 1400
-Wire Wire Line
-	7000 2450 8050 2450
-Wire Wire Line
-	8050 2050 8400 2050
-Wire Wire Line
-	8050 2050 8050 2100
-Wire Wire Line
-	8050 1400 8400 1400
-Wire Wire Line
-	8050 2450 8850 2450
-Wire Wire Line
-	8400 1400 8850 1400
-Wire Wire Line
-	7000 3900 8050 3900
-Wire Wire Line
-	8050 3500 8050 3550
-Wire Wire Line
-	8050 3900 8450 3900
-Wire Wire Line
-	8450 3900 9000 3900
-Wire Wire Line
-	8850 1400 9500 1400
-Wire Wire Line
-	8450 2850 8600 2850
-Wire Wire Line
-	9000 2850 9800 2850
-Wire Wire Line
-	9000 3050 9000 3350
-Wire Wire Line
-	6400 2850 6800 2850
-Wire Wire Line
-	6400 1400 6800 1400
-Wire Wire Line
-	6150 1400 6400 1400
-Wire Wire Line
-	6150 2850 6400 2850
-Wire Wire Line
-	2600 1800 2850 1800
-Wire Wire Line
-	2850 1800 3050 1800
-Wire Wire Line
-	2250 1800 2600 1800
-Wire Wire Line
-	1650 2450 1650 2500
-Wire Wire Line
-	5100 1500 5300 1500
-Wire Wire Line
-	4800 1950 4800 2500
-Wire Wire Line
-	9500 1400 9850 1400
-Wire Wire Line
-	8850 2450 9500 2450
-Wire Wire Line
-	5850 1400 6150 1400
-Connection ~ 4500 1800
-Wire Wire Line
-	4500 1800 4500 1500
-Wire Wire Line
-	4500 1800 4500 1850
-Wire Wire Line
-	4500 2150 4500 2200
-$Comp
-L pocket_mixer-rescue:GND #PWR?
-U 1 1 5C3CEE11
-P 4500 2200
-AR Path="/5C3CEE11" Ref="#PWR?"  Part="1" 
-AR Path="/5940313F/5C3CEE11" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4500 1950 50  0001 C CNN
-F 1 "GND" H 4500 2050 50  0000 C CNN
-F 2 "" H 4500 2200 50  0001 C CNN
-F 3 "" H 4500 2200 50  0001 C CNN
-	1    4500 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6150 2450 6150 2500
-Connection ~ 6150 2450
-Wire Wire Line
-	6150 3900 6150 3950
-Connection ~ 6150 3900
+Text Notes 700  7600 0    60   ~ 0
+DC-DC Step-up boost converter module\nhttps://de.aliexpress.com/item/32789671683.html?spm=a2g0s.9042311.0.0.27424c4d2Mwcoo
 $EndSCHEMATC
