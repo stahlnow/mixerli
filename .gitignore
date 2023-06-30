@@ -27,7 +27,7 @@ fp-info-cache
 *.csv
 
 # drawio backup
-.bkp
+*.bkp
 
 # dev files
 dev
