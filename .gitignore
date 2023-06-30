@@ -25,3 +25,9 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+
+# drawio backup
+.bkp
+
+# dev files
+dev
