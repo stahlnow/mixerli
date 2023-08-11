@@ -436,7 +436,7 @@
       "idf": "",
       "netlist": "mischerli.net",
       "specctra_dsn": "",
-      "step": "",
+      "step": "3d/dev/mixerli.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
