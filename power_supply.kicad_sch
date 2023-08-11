@@ -1286,7 +1286,7 @@
     (property "Value" "LED" (at 86.36 116.84 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "LEDs:LED_D3.0mm" (at 88.9 116.84 0)
+    (property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm" (at 88.9 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 88.9 116.84 0)
@@ -1542,7 +1542,7 @@
     (property "Value" "PWR-LED" (at 215.9 115.57 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "LEDs:LED_D3.0mm" (at 212.09 115.57 0)
+    (property "Footprint" "LED_THT:LED_Rectangular_W5.0mm_H2.0mm" (at 212.09 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 212.09 115.57 0)
@@ -1980,7 +1980,7 @@
   (symbol (lib_id "power:GND") (at 144.78 127 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e6a5b190-be89-46cc-a14b-1fa03f35d78c)
-    (property "Reference" "#PWR?" (at 144.78 133.35 0)
+    (property "Reference" "#PWR0123" (at 144.78 133.35 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 144.78 130.81 0)
@@ -1996,7 +1996,7 @@
     (instances
       (project "mixerli"
         (path "/4f411f68-04bd-4175-a406-bcaa4cf6601e/00000000-0000-0000-0000-00005940313f"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0123") (unit 1)
         )
       )
     )
