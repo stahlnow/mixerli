@@ -7,7 +7,7 @@ Battery powered 10 channel (4x2 + 1x2) stereo mixer featuring stereo input level
 # Documentation
 
 * [Build guide](documentation/build_guide.pdf)
-* [Schematics](documentation/schematics/v2.0/mixerli_schematics_v2.0.0.pdf)
+* [Schematics](documentation/schematics/v2.0/mixerli_schematics_v2.0.1.pdf)
 
 
 # License
