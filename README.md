@@ -1,4 +1,5 @@
 # mixerli
+
 Battery powered 10 channel (4x2 + 1x2) stereo mixer featuring stereo input level control slider and stereo rotary aux send level control.
 
 ![Mixerli](documentation/mixerli.png)
@@ -14,12 +15,12 @@ Battery powered 10 channel (4x2 + 1x2) stereo mixer featuring stereo input level
 SPDX-FileCopyrightText: 2023 Stahl office@stahlnow.com
 SPDX-License-Identifier: CERN-OHL-S-2.0+
 
-This source describes Open Hardware and is licensed under the CERN-
-OHL-S v2 or any later version.
+This source describes Open Hardware and is licensed under the CERN-OHL-S v2
+or any later version.
 
 You may redistribute and modify this source and make products using it
 under the terms of the CERN-OHL-S v2 or any later version
-(https://ohwr.org/cern ohl s v2.txt ).
+(https://ohwr.org/cern_ohl_s_v2.txt).
 
 This source is distributed WITHOUT ANY EXPRESS OR IMPLIED
 WARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY
