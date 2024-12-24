@@ -479,7 +479,7 @@
       "plot": "gerber/2.0.1/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "3d/dev/mixerli.step",
+      "step": "3d/v2.0/mixerli.step",
       "svg": "",
       "vrml": ""
     },
