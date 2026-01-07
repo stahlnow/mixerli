@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "4f411f68-04bd-4175-a406-bcaa4cf6601e")
 	(paper "A4")
 	(title_block
@@ -106,17 +106,17 @@
 						(type background)
 					)
 				)
-				(pin output line
-					(at 7.62 0 180)
+				(pin input line
+					(at -7.62 2.54 0)
 					(length 2.54)
-					(name "~"
+					(name "+"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -142,17 +142,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at -7.62 2.54 0)
+				(pin output line
+					(at 7.62 0 180)
 					(length 2.54)
-					(name "+"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -231,24 +231,6 @@
 			)
 			(symbol "NJM4580_3_1"
 				(pin power_in line
-					(at -2.54 -7.62 90)
-					(length 3.81)
-					(name "V-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
 					(at -2.54 7.62 270)
 					(length 3.81)
 					(name "V+"
@@ -266,7 +248,26 @@
 						)
 					)
 				)
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector_Audio:AudioJack3"
 			(exclude_from_sim no)
@@ -347,18 +348,6 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -2.54) (xy 0.635 -3.175) (xy 1.27 -2.54) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy -1.905 -2.54) (xy -1.27 -3.175) (xy -0.635 -2.54) (xy -0.635 0) (xy 2.54 0)
 					)
 					(stroke
@@ -371,7 +360,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 2.54) (xy -2.54 2.54) (xy -2.54 -2.54) (xy -3.175 -3.175) (xy -3.81 -2.54)
+						(xy 0 -2.54) (xy 0.635 -3.175) (xy 1.27 -2.54) (xy 2.54 -2.54)
 					)
 					(stroke
 						(width 0.254)
@@ -392,26 +381,20 @@
 						(type background)
 					)
 				)
-			)
-			(symbol "AudioJack3_1_1"
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy -2.54 2.54) (xy -2.54 -2.54) (xy -3.175 -3.175) (xy -3.81 -2.54)
 					)
-					(number "R"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
+			)
+			(symbol "AudioJack3_1_1"
 				(pin passive line
 					(at 5.08 2.54 180)
 					(length 2.54)
@@ -423,6 +406,24 @@
 						)
 					)
 					(number "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "R"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -449,9 +450,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -524,7 +528,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -536,7 +540,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -585,9 +589,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C_Polarized"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -743,9 +750,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -864,10 +874,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_Potentiometer_Dual"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -978,6 +991,18 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -1.397) (xy -6.858 -0.254) (xy -5.842 -0.254) (xy -6.35 -1.397)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
 					)
 				)
 				(polyline
@@ -1100,6 +1125,17 @@
 						(type none)
 					)
 				)
+				(rectangle
+					(start 3.81 -1.524)
+					(end 8.89 -3.556)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(polyline
 					(pts
 						(xy 4.572 0.508) (xy 5.08 0.508)
@@ -1150,30 +1186,6 @@
 				)
 				(polyline
 					(pts
-						(xy 6.604 0.508) (xy 6.858 0.508) (xy 6.35 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.35 -1.397) (xy -6.858 -0.254) (xy -5.842 -0.254) (xy -6.35 -1.397)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
 						(xy 6.35 -1.397) (xy 5.842 -0.254) (xy 6.858 -0.254) (xy 6.35 -1.397)
 					)
 					(stroke
@@ -1184,11 +1196,12 @@
 						(type outline)
 					)
 				)
-				(rectangle
-					(start 3.81 -1.524)
-					(end 8.89 -3.556)
+				(polyline
+					(pts
+						(xy 6.604 0.508) (xy 6.858 0.508) (xy 6.35 0)
+					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -1306,11 +1319,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Mechanical:MountingHole_Pad"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1408,12 +1426,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+12V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1485,7 +1508,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1497,7 +1520,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1528,12 +1551,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:-12V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1624,12 +1652,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1720,7 +1753,168 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "SUMMING AMPLIFIER"
+		(exclude_from_sim no)
+		(at 101.6 17.78 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "009b5465-0a65-4237-93e7-eb65321eeb18")
+	)
+	(text "CHANNELS"
+		(exclude_from_sim no)
+		(at 15.24 34.29 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "06665bf8-cef1-4e75-8d5b-1537b3c1b090")
+	)
+	(text "not implemented"
+		(exclude_from_sim no)
+		(at 170.18 144.78 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "113ffcdf-4c54-4e37-81dc-f91efa934ba7")
+	)
+	(text "LOOP SEND"
+		(exclude_from_sim no)
+		(at 19.05 123.19 90)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "12f8e43c-8f83-48d3-a9b5-5f3ebc0b6c43")
+	)
+	(text "OUTPUT LEVEL"
+		(exclude_from_sim no)
+		(at 175.26 53.34 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right bottom)
+		)
+		(uuid "241e0c85-4796-48eb-a5a0-1c0f2d6e5910")
+	)
+	(text "mixerli"
+		(exclude_from_sim no)
+		(at 35.56 19.05 0)
+		(effects
+			(font
+				(size 3.5306 3.5306)
+				(thickness 0.7061)
+				(bold yes)
+				(italic yes)
+			)
+			(justify right bottom)
+		)
+		(uuid "42ff012d-5eb7-42b9-bb45-415cf26799c6")
+	)
+	(text "POWER SUPPLY"
+		(exclude_from_sim no)
+		(at 158.75 110.49 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "4fd9bc4f-0ae3-42d4-a1b4-9fb1b2a0a7fd")
+	)
+	(text "VU METER"
+		(exclude_from_sim no)
+		(at 158.75 135.89 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "653a86ba-a1ae-4175-9d4c-c788087956d0")
+	)
+	(text "RIGHT"
+		(exclude_from_sim no)
+		(at 182.88 101.6 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "99186658-0361-40ba-ae93-62f23c5622e6")
+	)
+	(text "MAIN OUTPUT"
+		(exclude_from_sim no)
+		(at 243.84 58.42 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "bdf40d30-88ff-4479-bad1-69529464b61b")
+	)
+	(text "OUTPUT DRIVER"
+		(exclude_from_sim no)
+		(at 158.75 17.78 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "c3b3d7f4-943f-4cff-b180-87ef3e1bcbff")
+	)
+	(text "LEFT"
+		(exclude_from_sim no)
+		(at 182.88 27.94 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "c8ab8246-b2bb-4b06-b45e-2548482466fd")
+	)
+	(text "LOOP SEND"
+		(exclude_from_sim no)
+		(at 140.97 158.75 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "e6d68f56-4a40-4849-b8d1-13d5ca292900")
+	)
+	(text "Battery powered 10 channel (4x2 + 1x2) stereo mixer featuring\nstereo input level control slider and stereo rotary aux send\nlevel control."
+		(exclude_from_sim no)
+		(at 16.51 27.94 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.3048)
+				(bold yes)
+				(italic yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "f64497d1-1d62-44a4-8e5e-6fba4ebc969a")
 	)
 	(junction
 		(at 125.73 77.47)
@@ -3917,166 +4111,6 @@
 			(type default)
 		)
 		(uuid "fd60415a-f01a-46c5-9369-ea970e435e5b")
-	)
-	(text "SUMMING AMPLIFIER"
-		(exclude_from_sim no)
-		(at 101.6 17.78 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "009b5465-0a65-4237-93e7-eb65321eeb18")
-	)
-	(text "CHANNELS"
-		(exclude_from_sim no)
-		(at 15.24 34.29 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "06665bf8-cef1-4e75-8d5b-1537b3c1b090")
-	)
-	(text "not implemented"
-		(exclude_from_sim no)
-		(at 170.18 144.78 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "113ffcdf-4c54-4e37-81dc-f91efa934ba7")
-	)
-	(text "LOOP SEND"
-		(exclude_from_sim no)
-		(at 19.05 123.19 90)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "12f8e43c-8f83-48d3-a9b5-5f3ebc0b6c43")
-	)
-	(text "OUTPUT LEVEL"
-		(exclude_from_sim no)
-		(at 175.26 53.34 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify right bottom)
-		)
-		(uuid "241e0c85-4796-48eb-a5a0-1c0f2d6e5910")
-	)
-	(text "mixerli"
-		(exclude_from_sim no)
-		(at 35.56 19.05 0)
-		(effects
-			(font
-				(size 3.5306 3.5306)
-				(thickness 0.7061)
-				(bold yes)
-				(italic yes)
-			)
-			(justify right bottom)
-		)
-		(uuid "42ff012d-5eb7-42b9-bb45-415cf26799c6")
-	)
-	(text "POWER SUPPLY"
-		(exclude_from_sim no)
-		(at 158.75 110.49 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "4fd9bc4f-0ae3-42d4-a1b4-9fb1b2a0a7fd")
-	)
-	(text "VU METER"
-		(exclude_from_sim no)
-		(at 158.75 135.89 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "653a86ba-a1ae-4175-9d4c-c788087956d0")
-	)
-	(text "RIGHT"
-		(exclude_from_sim no)
-		(at 182.88 101.6 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "99186658-0361-40ba-ae93-62f23c5622e6")
-	)
-	(text "MAIN OUTPUT"
-		(exclude_from_sim no)
-		(at 243.84 58.42 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "bdf40d30-88ff-4479-bad1-69529464b61b")
-	)
-	(text "OUTPUT DRIVER"
-		(exclude_from_sim no)
-		(at 158.75 17.78 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "c3b3d7f4-943f-4cff-b180-87ef3e1bcbff")
-	)
-	(text "LEFT"
-		(exclude_from_sim no)
-		(at 182.88 27.94 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "c8ab8246-b2bb-4b06-b45e-2548482466fd")
-	)
-	(text "LOOP SEND"
-		(exclude_from_sim no)
-		(at 140.97 158.75 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "e6d68f56-4a40-4849-b8d1-13d5ca292900")
-	)
-	(text "Battery powered 10 channel (4x2 + 1x2) stereo mixer featuring\nstereo input level control slider and stereo rotary aux send\nlevel control."
-		(exclude_from_sim no)
-		(at 16.51 27.94 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-				(thickness 0.3048)
-				(bold yes)
-				(italic yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "f64497d1-1d62-44a4-8e5e-6fba4ebc969a")
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -10611,6 +10645,10 @@
 	(sheet
 		(at 39.37 38.1)
 		(size 40.64 60.96)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0)
@@ -10640,143 +10678,143 @@
 		)
 		(pin "1-RIGHT" input
 			(at 39.37 43.18 180)
+			(uuid "3c5e5ea9-793d-46e3-86bc-5884c4490dc7")
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify left)
 			)
-			(uuid "3c5e5ea9-793d-46e3-86bc-5884c4490dc7")
 		)
 		(pin "1-LEFT" input
 			(at 39.37 40.64 180)
+			(uuid "9dcdc92b-2219-4a4a-8954-45f02cc3ab25")
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify left)
 			)
-			(uuid "9dcdc92b-2219-4a4a-8954-45f02cc3ab25")
 		)
 		(pin "2-RIGHT" input
 			(at 39.37 55.88 180)
+			(uuid "dae72997-44fc-4275-b36f-cd70bf46cfba")
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify left)
 			)
-			(uuid "dae72997-44fc-4275-b36f-cd70bf46cfba")
 		)
 		(pin "2-LEFT" input
 			(at 39.37 53.34 180)
+			(uuid "5d9921f1-08b3-4cc9-8cf7-e9a72ca2fdb7")
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify left)
 			)
-			(uuid "5d9921f1-08b3-4cc9-8cf7-e9a72ca2fdb7")
 		)
 		(pin "3-RIGHT" input
 			(at 39.37 68.58 180)
+			(uuid "c8b6b273-3d20-4a46-8069-f6d608563604")
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify left)
 			)
-			(uuid "c8b6b273-3d20-4a46-8069-f6d608563604")
 		)
 		(pin "3-LEFT" input
 			(at 39.37 66.04 180)
+			(uuid "92035a88-6c95-4a61-bd8a-cb8dd9e5018a")
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify left)
 			)
-			(uuid "92035a88-6c95-4a61-bd8a-cb8dd9e5018a")
 		)
 		(pin "4-RIGHT" input
 			(at 39.37 81.28 180)
+			(uuid "4ec618ae-096f-4256-9328-005ee04f13d6")
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify left)
 			)
-			(uuid "4ec618ae-096f-4256-9328-005ee04f13d6")
 		)
 		(pin "4-LEFT" input
 			(at 39.37 78.74 180)
+			(uuid "3326423d-8df7-4a7e-a354-349430b8fbd7")
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify left)
 			)
-			(uuid "3326423d-8df7-4a7e-a354-349430b8fbd7")
 		)
 		(pin "LOOP-RIGHT" output
 			(at 80.01 93.98 0)
+			(uuid "4d4fecdd-be4a-47e9-9085-2268d5852d8f")
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify right)
 			)
-			(uuid "4d4fecdd-be4a-47e9-9085-2268d5852d8f")
 		)
 		(pin "LOOP-LEFT" output
 			(at 80.01 91.44 0)
+			(uuid "8458d41c-5d62-455d-b6e1-9f718c0faac9")
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify right)
 			)
-			(uuid "8458d41c-5d62-455d-b6e1-9f718c0faac9")
 		)
 		(pin "MAIN-XPAND-RIGHT" output
 			(at 80.01 86.36 0)
+			(uuid "8de2d84c-ff45-4d4f-bc49-c166f6ae6b91")
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify right)
 			)
-			(uuid "8de2d84c-ff45-4d4f-bc49-c166f6ae6b91")
 		)
 		(pin "MAIN-XPAND-LEFT" output
 			(at 80.01 83.82 0)
+			(uuid "935057d5-6882-4c15-9a35-54677912ba12")
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify right)
 			)
-			(uuid "935057d5-6882-4c15-9a35-54677912ba12")
 		)
 		(pin "RETURN-RIGHT" input
 			(at 39.37 93.98 180)
+			(uuid "e091e263-c616-48ef-a460-465c70218987")
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify left)
 			)
-			(uuid "e091e263-c616-48ef-a460-465c70218987")
 		)
 		(pin "RETURN-LEFT" input
 			(at 39.37 91.44 180)
+			(uuid "71c6e723-673c-45a9-a0e4-9742220c52a3")
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify left)
 			)
-			(uuid "71c6e723-673c-45a9-a0e4-9742220c52a3")
 		)
 		(instances
 			(project "mixerli"
@@ -10789,6 +10827,10 @@
 	(sheet
 		(at 160.02 114.3)
 		(size 31.75 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0)
@@ -10818,23 +10860,23 @@
 		)
 		(pin "12V" output
 			(at 191.77 118.11 0)
+			(uuid "99e6b8eb-b08e-4d42-84dd-8b7f6765b7b7")
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify right)
 			)
-			(uuid "99e6b8eb-b08e-4d42-84dd-8b7f6765b7b7")
 		)
 		(pin "-12V" output
 			(at 191.77 121.92 0)
+			(uuid "db851147-6a1e-4d19-898c-0ba71182359b")
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify right)
 			)
-			(uuid "db851147-6a1e-4d19-898c-0ba71182359b")
 		)
 		(instances
 			(project "mixerli"
@@ -10847,6 +10889,10 @@
 	(sheet
 		(at 16.51 38.1)
 		(size 20.32 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0)
@@ -10876,23 +10922,23 @@
 		)
 		(pin "LEFT" output
 			(at 36.83 40.64 0)
+			(uuid "272c2a78-b5f5-4b61-aed3-ec69e0e92729")
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify right)
 			)
-			(uuid "272c2a78-b5f5-4b61-aed3-ec69e0e92729")
 		)
 		(pin "RIGHT" output
 			(at 36.83 43.18 0)
+			(uuid "a3fab380-991d-404b-95d5-1c209b047b6e")
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify right)
 			)
-			(uuid "a3fab380-991d-404b-95d5-1c209b047b6e")
 		)
 		(instances
 			(project "mixerli"
@@ -10905,6 +10951,10 @@
 	(sheet
 		(at 16.51 50.8)
 		(size 20.32 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0)
@@ -10934,23 +10984,23 @@
 		)
 		(pin "LEFT" output
 			(at 36.83 53.34 0)
+			(uuid "c15b2f75-2e10-4b71-bebb-e2b872171b92")
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify right)
 			)
-			(uuid "c15b2f75-2e10-4b71-bebb-e2b872171b92")
 		)
 		(pin "RIGHT" output
 			(at 36.83 55.88 0)
+			(uuid "f6a5c856-f2b5-40eb-a958-b666a0d408a0")
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify right)
 			)
-			(uuid "f6a5c856-f2b5-40eb-a958-b666a0d408a0")
 		)
 		(instances
 			(project "mixerli"
@@ -10963,6 +11013,10 @@
 	(sheet
 		(at 16.51 63.5)
 		(size 20.32 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0)
@@ -10992,23 +11046,23 @@
 		)
 		(pin "LEFT" output
 			(at 36.83 66.04 0)
+			(uuid "162e5bdd-61a8-46a3-8485-826b5d58e1a1")
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify right)
 			)
-			(uuid "162e5bdd-61a8-46a3-8485-826b5d58e1a1")
 		)
 		(pin "RIGHT" output
 			(at 36.83 68.58 0)
+			(uuid "319c683d-aed6-4e7d-aee2-ff9871746d52")
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify right)
 			)
-			(uuid "319c683d-aed6-4e7d-aee2-ff9871746d52")
 		)
 		(instances
 			(project "mixerli"
@@ -11021,6 +11075,10 @@
 	(sheet
 		(at 16.51 76.2)
 		(size 20.32 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0)
@@ -11050,23 +11108,23 @@
 		)
 		(pin "LEFT" output
 			(at 36.83 78.74 0)
+			(uuid "5e6153e6-2c19-46de-9a8e-b310a2a07861")
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify right)
 			)
-			(uuid "5e6153e6-2c19-46de-9a8e-b310a2a07861")
 		)
 		(pin "RIGHT" output
 			(at 36.83 81.28 0)
+			(uuid "4346fe55-f906-453a-b81a-1c013104a598")
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify right)
 			)
-			(uuid "4346fe55-f906-453a-b81a-1c013104a598")
 		)
 		(instances
 			(project "mixerli"
@@ -11079,6 +11137,10 @@
 	(sheet
 		(at 16.51 88.9)
 		(size 20.32 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0)
@@ -11108,23 +11170,23 @@
 		)
 		(pin "LEFT" output
 			(at 36.83 91.44 0)
+			(uuid "41c18011-40db-4384-9ba4-c0158d0d9d6a")
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify right)
 			)
-			(uuid "41c18011-40db-4384-9ba4-c0158d0d9d6a")
 		)
 		(pin "RIGHT" output
 			(at 36.83 93.98 0)
+			(uuid "0fb27e11-fde6-4a25-adbb-e9684771b369")
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify right)
 			)
-			(uuid "0fb27e11-fde6-4a25-adbb-e9684771b369")
 		)
 		(instances
 			(project "mixerli"
@@ -11139,4 +11201,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )

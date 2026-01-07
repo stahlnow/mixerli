@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "cdfb661b-489b-4b76-99f4-62b92bb1ab18")
 	(paper "A4")
 	(title_block
@@ -16,7 +16,9 @@
 	)
 	(lib_symbols
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -135,12 +137,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -231,10 +238,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "stahllabs:POT_Dual_Common_Gnd"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -376,6 +386,30 @@
 				)
 				(polyline
 					(pts
+						(xy -6.35 -1.397) (xy -6.858 -0.254) (xy -5.842 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -1.397) (xy -6.858 -0.254) (xy -5.842 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
 						(xy -5.588 0.508) (xy -5.08 0.508)
 					)
 					(stroke
@@ -494,6 +528,17 @@
 						(type none)
 					)
 				)
+				(rectangle
+					(start 3.81 -1.524)
+					(end 8.89 -3.556)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(polyline
 					(pts
 						(xy 4.572 0.508) (xy 5.08 0.508)
@@ -544,30 +589,6 @@
 				)
 				(polyline
 					(pts
-						(xy -6.35 -1.397) (xy -6.858 -0.254) (xy -5.842 -0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -6.35 -1.397) (xy -6.858 -0.254) (xy -5.842 -0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
 						(xy 6.35 -1.397) (xy 5.842 -0.254) (xy 6.858 -0.254)
 					)
 					(stroke
@@ -596,17 +617,6 @@
 					)
 					(stroke
 						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 3.81 -1.524)
-					(end 8.89 -3.556)
-					(stroke
-						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -704,7 +714,41 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "STEREO SEND"
+		(exclude_from_sim no)
+		(at 26.67 21.59 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "042fe62b-53aa-4e86-97d0-9ccb1e16a895")
+	)
+	(text "not implemented"
+		(exclude_from_sim no)
+		(at 148.59 30.48 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "5dbda758-e74b-4ccf-ad68-495d537d68ba")
+	)
+	(text "PANORAMA"
+		(exclude_from_sim no)
+		(at 137.16 21.59 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "b853d9ac-7829-468f-99ac-dc9996502e94")
 	)
 	(junction
 		(at 91.44 115.57)
@@ -1612,43 +1656,9 @@
 		)
 		(uuid "ff2f00dc-dff2-4a19-af27-f5c793a8d261")
 	)
-	(text "STEREO SEND"
-		(exclude_from_sim no)
-		(at 26.67 21.59 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "042fe62b-53aa-4e86-97d0-9ccb1e16a895")
-	)
-	(text "not implemented"
-		(exclude_from_sim no)
-		(at 148.59 30.48 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "5dbda758-e74b-4ccf-ad68-495d537d68ba")
-	)
-	(text "PANORAMA"
-		(exclude_from_sim no)
-		(at 137.16 21.59 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "b853d9ac-7829-468f-99ac-dc9996502e94")
-	)
 	(hierarchical_label "MAIN-XPAND-RIGHT"
 		(shape output)
 		(at 101.6 123.19 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1660,7 +1670,6 @@
 	(hierarchical_label "2-RIGHT"
 		(shape input)
 		(at 48.26 58.42 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1672,7 +1681,6 @@
 	(hierarchical_label "LOOP-LEFT"
 		(shape output)
 		(at 101.6 127 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1684,7 +1692,6 @@
 	(hierarchical_label "RETURN-RIGHT"
 		(shape input)
 		(at 57.15 139.7 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1696,7 +1703,6 @@
 	(hierarchical_label "4-RIGHT"
 		(shape input)
 		(at 48.26 106.68 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1708,7 +1714,6 @@
 	(hierarchical_label "1-RIGHT"
 		(shape input)
 		(at 48.26 34.29 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1720,7 +1725,6 @@
 	(hierarchical_label "4-LEFT"
 		(shape input)
 		(at 48.26 119.38 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1732,7 +1736,6 @@
 	(hierarchical_label "MAIN-XPAND-LEFT"
 		(shape output)
 		(at 101.6 119.38 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1744,7 +1747,6 @@
 	(hierarchical_label "2-LEFT"
 		(shape input)
 		(at 48.26 71.12 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1756,7 +1758,6 @@
 	(hierarchical_label "3-RIGHT"
 		(shape input)
 		(at 48.26 82.55 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1768,7 +1769,6 @@
 	(hierarchical_label "3-LEFT"
 		(shape input)
 		(at 48.26 95.25 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1780,7 +1780,6 @@
 	(hierarchical_label "RETURN-LEFT"
 		(shape input)
 		(at 57.15 144.78 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1792,7 +1791,6 @@
 	(hierarchical_label "LOOP-RIGHT"
 		(shape output)
 		(at 101.6 130.81 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -1804,7 +1802,6 @@
 	(hierarchical_label "1-LEFT"
 		(shape input)
 		(at 48.26 46.99 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.524 1.524)
